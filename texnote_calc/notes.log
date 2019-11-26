@@ -1,0 +1,548 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.13)  21 NOV 2019 18:02
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**notes.tex
+(./notes.tex
+LaTeX2e <2019-10-01> patch level 3
+(c:/texlive/2019/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2019/10/25 v1.4k Standard LaTeX document class
+(c:/texlive/2019/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2019/04/01 v2.17c AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen103
+))
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks16
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks17
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2855.
+LaTeX Info: Redefining \] on input line 2856.
+) (./notes.aux)
+\openout1 = `notes.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+
+Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--6
+[]\OT1/cmr/bx/n/17.28 Substitution, A
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
+
+(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
+
+
+(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 11--12
+\OT1/cmr/m/n/12 For Type (ii) the gen-eral so-lu-tion can
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
+
+ []
+
+
+Overfull \hbox (0.91376pt too wide) detected at line 14
+[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 sin\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ^^R\
+OT1/cmr/m/n/12 )[]\OML/cmm/m/it/12 cos\OT1/cmr/m/n/12 (2\OML/cmm/m/it/12 ^^R\OT
+1/cmr/m/n/12 ) = [] [][] = [][] \OML/cmm/m/it/12 w[]dw
+ []
+
+[1{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Underfull \hbox (badness 2680) in paragraph at lines 15--15
+[]\OT1/cmr/bx/n/14.4 Some In-ter-est-ing Tech-
+ []
+
+
+Underfull \hbox (badness 3635) in paragraph at lines 18--19
+[]\OT1/cmr/m/n/12 Using trig iden-ti-ties, es-pe-cially the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]\OT1/cmr/bx/n/14.4 Integrating Even and
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 22--24
+\OT1/cmr/m/n/12 By in-tu-ition, it should be ob-vi-ous that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+[]\OT1/cmr/m/n/12 evaluated for even func-tions is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+
+ []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 32--32
+\OT1/cmr/m/n/12 Ex. Sup-pose $\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 (\OML/cmm/m/it/
+12 t\OT1/cmr/m/n/12 )$ gives po-si-tion and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
+
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 34--38
+\OT1/cmr/bx/n/12 Theorem: The MVT of In-te-grals:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
+\OT1/cmr/m/it/12 continuous on [a,b] there ex-ists some
+ []
+
+
+Underfull \hbox (badness 6141) in paragraph at lines 34--38
+\OT1/cmr/m/it/12 point on the in-ter-val $\OML/cmm/m/it/12 c \OMS/cmsy/m/n/12 2
+$\OT1/cmr/m/it/12 [a,b] where
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 40--41
+\OT1/cmr/m/n/12 Say we wanted to do this on a dis-con-
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 42--43
+\OT1/cmr/m/n/12 Recall the prod-uct rule for dif-fer-en-tiable
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+
+ []
+
+
+Overfull \hbox (21.8329pt too wide) detected at line 57
+[]\OT1/cmr/m/n/12 (3\OML/cmm/m/it/12 t \OT1/cmr/m/n/12 + 5)\OML/cmm/m/it/12 cos
+\OT1/cmr/m/n/12 ([])\OML/cmm/m/it/12 dt \OT1/cmr/m/n/12 = 4(3\OML/cmm/m/it/12 t
+ \OT1/cmr/m/n/12 + 5)\OML/cmm/m/it/12 sin[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/1
+2 1[] [] \OML/cmm/m/it/12 sin\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 dt\OT1/cmr/m/n
+/12 )
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+
+ []
+
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 6
+9.
+(c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
+
+Underfull \hbox (badness 2205) in paragraph at lines 80--85
+\OT1/cmr/bx/n/12 However (0,0) is not an in-flec-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--85
+
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 88--90
+\OT1/cmr/m/n/12 Remember, if we are given bounds we
+ []
+
+
+Underfull \hbox (badness 4872) in paragraph at lines 88--90
+\OT1/cmr/m/n/12 take $\OML/cmm/m/it/12 fxgx$ \OT1/cmr/m/n/12 eval-u-ated at tho
+se bounds!
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
+
+ []
+
+[4]
+Overfull \hbox (27.9158pt too wide) detected at line 95
+\OML/cmm/m/it/12 I \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/12 ^^@ 
+\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 e[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 4\OM
+L/cmm/m/it/12 x[]\OT1/cmr/m/n/12 4\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 + 12\OML
+/cmm/m/it/12 x[]\OT1/cmr/m/n/12 8\OML/cmm/m/it/12 e[] \OMS/cmsy/m/n/12 ^^@ \OT1
+/cmr/m/n/12 24\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 16\OML/cmm/m/it/12 e[] \OT1/cmr
+/m/n/12 + 24 \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 32\OML/cmm/m/it/12 e[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 100.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--110
+
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 98--110
+\OT1/cmr/m/n/12 By Tab-u-lar In-te-gra-tion: the ta-ble is at
+ []
+
+
+Underfull \hbox (badness 3058) in paragraph at lines 112--112
+[]\OT1/cmr/bx/n/14.4 11.1 Ve-loc-ity and Net
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+
+Underfull \hbox (badness 2111) in paragraph at lines 114--115
+\OT1/cmr/m/n/12 Generally, you want to find the ze-roes
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 114--115
+\OT1/cmr/m/n/12 and sum the in-te-grals so you take all
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 114--115
+\OT1/cmr/m/n/12 As with pre-vi-ously, the av-er-age ve-loc-ity
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 115--116
+\OT1/cmr/m/n/12 However, for av-er-age speed, we need to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+[]\OT1/cmr/bx/n/14.4 11.2 Area Be-tween
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+
+ []
+
+
+Underfull \hbox (badness 2452) in paragraph at lines 127--127
+\OT1/cmr/m/n/12 This is a bit dif-fer-ent as these curves
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 136--136
+\OT1/cmr/m/n/12 If we wanted to do this for a pyra-mid
+ []
+
+[7]
+Underfull \hbox (badness 2012) in paragraph at lines 137--137
+\OT1/cmr/m/n/12 Via in-te-gra-tion by sub-sti-tu-tion, we can
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+
+ []
+
+
+Underfull \hbox (badness 1389) in paragraph at lines 137--137
+\OT1/cmr/m/n/12 (ra-dius 2), where the cross sec-tions are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 137--137
+\OT1/cmr/m/n/12 We know how to find the base of the
+ []
+
+[8
+
+] (./notes.aux) ) 
+Here is how much of TeX's memory you used:
+ 1421 strings out of 492164
+ 15460 string characters out of 6129087
+ 83560 words of memory out of 5000000
+ 5821 multiletter control sequences out of 15000+600000
+ 11377 words of font info for 42 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 30i,10n,31p,940b,183s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c
+:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/
+2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on notes.pdf (8 pages, 157681 bytes).
+PDF statistics:
+ 79 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,139 @@
+\documentclass[twocolumn, 12pt]{report}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\begin{document}
+  \chapter{Integration}
+  \section {Substitution, A Change of Variables}
+  We want to apply a \textit {Change of Variables} to substitute in order to \begin{enumerate}
+    \item Simplify the integrand
+    \item Find Antiderivatives that result from the chain rule. This is a more common use.
+  \end{enumerate}
+  For example, Type (i): $$\int \frac{x}{1+x} dx = \int \frac{y_1}{y} dy$$ which can be broken apart (sums in numerator can be decomposed). Then, we can find the integral of $\int 1- \frac{1}{y}dy = 1+ x - ln|1+x| + c$ via backsubstitution of the variable y = 1-x. \\\\
+  For Type (ii) the general solution can be described as follows: \\ For an integral of the form $$\int f(g(x))g'(x) dx$$, ie. where we have an outer function $f$ of some inner function $g$ and the derivative of the inner function (or some constant multiple of it/simple algebraic manipulation) inside the integral multiplied by $f(g(x))$, we can use integration by parts. \\\\ We take $$u = g(x) \Rightarrow u' = g'(x) dx$$ $$I = \int f(u) d(u) = F(u) + c$$ $$=F(g(x)) + C$$.  \\\\
+  For definite variables, you have to change the bounds with the change of the variables, where you apply g(x) to the bounds of x as well as to x itself. \\\\
+  Ex. for $$\int_0^\frac{pi}{4} (sin 2\theta)^3 cos(2\theta) = \frac{1}{2}\int_{sin(2(0))}^{sin\frac{\pi}{4}} = \int^1_0 w^3 dw$$ Recall the $\frac{1}{2}$ comes out of the derivative, and we take it as a factor to get dx inside the integral. \\ The general formula is thus $$\int_a^b f(g(x))g'(x) dx = \int_{g(a)}^{g(b)} f(u)du | u = g(x)$$
+  \subsection{Some Interesting Techniques}
+  \begin{enumerate}
+    \item Taking powers and breaking them apart into multiplication
+    \item Using trig identities, especially the pythagorean identity
+    \item Using shortcut for even/odd functions ....
+  \end{enumerate}
+  \subsection{Integrating Even and Odd Functions Symmetrically}
+  By intuition, it should be obvious that integrating over the bounds [-a, a] for a symmetric about y (even) function should give twice the integral from [0,a], which can simplify things greatly as we may only need evaluate one endpoint then double it. It's even easier for odd functions, which from [-a, 0] are negative and from [0, a] are equal and opposite, so the integral from [-a, a] cancels and is just zero.\\\\
+  \textbf{To summarize, for $\int_{-a}^a f(x)dx$}
+  \begin{enumerate}
+    \item evaluated for even functions is $2\int_{0}^a f(x)dx$
+    \item evaluated for odd functions is just $0$
+  \end{enumerate}
+
+\section{Mean Value Theorem of Integrals}
+  Let's say F is continuous on [a,b] amd subdivided into n equal intervals. We take the Riemann sum and the $\Delta x$ with some simple calculations to get that the average value for n intervals is $$\frac{1}{n} \sum_{i=1}^n f(x_1^*)\delta x$$ where $x_1^*$ is any point in the interval, like the right or left bound, or the midpoint. As we do this, we end up with the formula for the Mean Value Theorem of Integrals Below.
+
+  The average value of a function over [a, b] given as $$F_{avg} = \frac {1}{b-a} \int_a^b f(x)dx$$.\\\\ Ex. Suppose $x(t)$ gives position and $v(t)$ gives velocity, $$v_{avg} = \frac{1}{b-a} \int_a^b \frac{dx}{dt}(x) dt$$ and by fundamental theorem we get that equal to $$\frac{x_b-x_a}{b-a}$$ \\\\
+  Ex. Find the average value of $f(x) = 1$ on [0,5]:
+  $$f_{avg} = \frac{1}{5} \int_0^5 (x+1) dx = \frac{1}{5} (5^2/2 + 10/2) = \frac{7}{2}$$ \\\\
+  \textbf{Theorem: The MVT of Integrals:} \textit{ If f is \\continuous on [a,b] there exists some point on the interval $c\in$[a,b] where $f(c) = \frac{1}{b-a} \int_a^b f(x)dx = f_{avg}(x)$}. \\ As an interesting corrolary, $\int_a^b f(x)dx = f(c)(b-a)$ - rectangle reduction.
+  \\\\
+  \textbf{Proof} Since f is continuous, by the Extreme Value Theorem, it attains its max $M$ and min $m$, where $ m \leq f(x) \leq M$ for all $x \in [a,b]$. \\ Since if g(x) $\leq$ h(x) $\implies$ the integral of g(x) over [a,b] is less or equal to the integral of h(x) over the range. \\\\Thus $\int_a^b m dx \leq \int_a^b f(x) dx \leq \int_a^b M dx \implies m(b-a) \leq \int_a^b f(x) dx \leq M (b-a) \implies m \leq f_{avg} \leq M$ by dividing by (b-a). \\\\
+  So there exists a $d < e$ where $f(e) = m$ and $f(d) = M$, then on [d,e] as a subset of [a,b] then by IVT, there exists a $c \in [a,b]$ where $$f(c) = \frac{1}{b-a}\int_a^b f(x)dx = \bar{f}$$\\\\
+
+   \textbf{HOMEWORK (1): Determine the point C that satisfies the MVTI for $f(x) = x^2 + 3x + 2 \text{ on } [1,2].$}\\\\ Say we wanted to do this on a discontinuous function, we'll have to break it along the discontinuities. Then, we might get an average value for the function that isn't actually taken on by said function.
+  \section{Integration by Parts}
+  Recall the product rule for differentiable functions f and g:
+  $$(fg)' = f'g + g'f$$
+
+  $$\int (fg)' dx = \int f'g(dx) + g'f (dx)$$
+  Then
+  $$\int f\cdot g' dx = f\cdot g - \int f'gdx$$
+  Set u as f(x) and v as g(x)
+  Then $du = f'(x) dx$ and $dv = g'(x) dx$:
+  $$\int f\cdot g' dx = f\cdot g - \int f'gdx$$
+  $$\int udv = uv - \int vdu$$
+  u, in this case, is being differentiated while dv is being integrated in the LHS term. Also, $v = \int dv = \int g'(x)dx$ by Fundamental Thm. of Calculus, so returns the inside of the bracket ($v$).\\\\
+
+  Ex. $\int (3t + 5) cos (\frac{t}{4}) dt$
+  We can take the first term (3t + 5) as u, and $cos (\frac{t}{4})$ as dv.
+  Thus, $du = 3 dt$ and $v = 4sin(\frac{t}{4})$ \\\\
+  So: $$\int (3t + 5) cos (\frac{t}{4}) dt = 4(3t + 5)sin\frac{t}{4} -1^2\int sin(\frac{t}{4} dt)$$ $$= 4(3t + 5)sin \frac {t}{4} + 48cos\frac{t}{4} + C$$
+You should try to integrate the term that will \textbf{drop powers}.\\\\
+
+  Easier Ex. $$x^7 \times lnx dx$$. We should take u as ln x (because we don't yet know how to integrate it, and differentiating it will give us a power of x, so we'll be done.) and dv as $x^7 dx$.
+   $$x^7 \times lnx dx = \frac{1}{8}x^8 lnx - \frac{1}{8}\int{x^8 \frac{1}{x}}$$\\ $$= \frac{1}{8}x^8 ln(x) - \frac{1}{8}^2x^8 + C$$
+
+   Another Ex. $$\int lnx\times 1 dx = \int 1 \times ln x$$
+   u is ln x, dv is just 1dx or dx. Our du becomes $x^-1$ and our v becomes x via approrpiate differentiation and integration. Thus:
+   $$\int lnx\times 1 dx = xlnx - x +C$$
+
+   \textbf{Homework (2) Integrate $$\int x \sqrt{x+1} dx$$}
+   \begin{itemize}
+     \item Using substitution
+     \item Using integration by parts
+   \end {itemize}
+
+   \subsection{Old Remark about points of inflection}
+   A point (a, f(a)) is an inflection point if f is continuous at a and concavity changes sign, eg. when:
+   \begin{itemize}
+     \item $f''(a) = 0$ OR
+     \item $f''(a) = $undefined (vertical)
+     \item - \textbf{These are NOT sufficient conditions}
+   \end{itemize}
+   ex, $f(x) = x^4$\\
+   $f''(x) = 12x^2$, x = 0 causes f''(x) to be zero \\
+   \textbf{However (0,0) is not an inflection point, because the concavity doesn't change.} \\\\
+   ex, $f(x) = x^\frac{1}{3}$\\$f''x = \frac{-2}{9}x^\frac{-5}{2}$\\$f'(0)$ is not defined. It has a vertical tangent at zero, Though f'' is undefined at that point, (0,0) is still in the original domain so it is a POIfx \\\\
+   ex. $f(x) = x^\frac{2}{3}$\\ $f''(x) = \frac{-2}{9}x^\frac{-4}{3}$ \\ On the line of $f'(x)$, it goes from negative to positive, and from $f''(x)$ it is concave down (negative) both left and right of (0), so it is not a POIFX.
+
+   \subsection{Tabular Integration}
+   Recall:
+   $$\int_a^b u dv = uv|^b_a - \int_a^b v du$$\\
+   Remember, if we are given bounds we take $fxgx$ evaluated at those bounds! ($f(b)g(b) - f(a)g(a)$)\\\\
+   Ex. of Tabular integration:\\ We need to make a table. Say we had $$I = \int x^4 e^\frac{x}{2}$$. We want to keep $x^4$ as u, because differentiating this will get down to $0$. To do this, we'd have to make probably 4 I.B.P. executions. We should make a table with the derivatives of x:
+   $$\begin{matrix}x^4 \\ 4x^3 \\ 12x^2 \\ 24 x \\ 24 \\ 0\end{matrix}\begin{matrix}e^\frac{x}{2} \\ 2e^\frac{x}{2} \\ 4e^\frac{x}{2} \\ 8e^\frac{x}{2} \\ 16e^\frac{x}{2} \\ 32e^\frac{x}{2}\end{matrix}$$
+   and integrals of $e^\frac{x}{2}$.
+
+  We take 1,1 2,2 +; 2,1, 3,2 - ...
+  $$I = x^4 -2e^\frac{x}{2} - 4x^3 4e^\frac{x}{2} + 12x^2 8 e^\frac{x}{2}- 24x 16e^\frac{x}{2} + 24 \cdot 32e^\frac{x}{2}$$.
+
+  This alternates signs from integration by parts. This will simplify the integration by parts, because you'd have to do it five times otherwise.\\\\
+  Ex. from hw $$I = \int e^{2x} cos (3x)$$ we take either as u or v. By the standard method, it may be easier to take $u=cos 3x$.\\ $du= -3sin3x$   $v = 0.5e^{2x}$ \\$= \frac{1}{2}e^{2x}cos(3x) + \frac{3}{2} \int sin(3x)e^{2x}dx$. \\ Doing the integration by parts again:\\ $=\frac{1}{2}e^{2x}cos(3x) - \frac{9}{4} \int e^{2x}sin(3x)dx $ \\ again\\
+   $I=\frac{1}{2}e^{2x}cos(3x) + \frac{3}{4} \int sin(3x)e^{2x}dx - \frac{9}{4}I$. \\\\Then we solve for I.\\\\ By Tabular Integration: the table is at the top of the column here.
+   \begin{table}[]
+ \begin{tabular}{ll}
+
+ u & dv \\
+ $cos(3x)$   & $e^{2x}$
+               \\ \hline
+ $-3sin(3x)$ & $\frac{1}{2}e^{2x}$   \\
+ $-9cos3x$   & $\frac{1}{4}e^{2x}$
+ \end{tabular}
+ \end{table}
+
+ \section{11 Applications of Integration}
+ \subsection{11.1 Velocity and Net Change}
+ Let $s(t)$ be the position for t in [a,b] and the total displacement is $s(b)-s(a)$. \\This is also $\int_a^b s'(t) dt$. \\\\ The total distance is given by $$\int_a^b |s'(t)| dt$$. This involves splitting the integral into positive and negative sections, and multiplying the integral of the negative sections by -1.\\\\ Suppose the velocity $v(t) = t^2 - 11t + 24 | t\in[0 ,8]$. The total displacement is $$\int_0^8 v(t)dt = \frac{1}{3}t^3 - \frac{11}{2} t^2 + 24t \bigg{|}_0^8 = \frac{32}{3}$$. \\\\
+ However, the total distance is $$D|^8_0 = \int_0^3v(t)dt + (-)\int_3^8 v(t)dt$$. Computing this gives $\frac{157}{3}$\\\\ Generally, you want to find the zeroes and sum the integrals so you take all of them as positive, multiplying the negative sections by $-1$ to get the total distance. \\\\
+ As with previously, the average velocity is given by $$\bar{V(t)}=\frac{1}{b-a} \int_a^b V(t)dt$$ However, for average speed, we need to take the integrals of positive and negative with $\int -V(t)dt$ for the negative setions and $\int V(t)dt$ for the positive sections. \\\\ \textbf{CHECK THE SIGNS!}
+\subsection{11.2 Area Between Curves}
+There are two ways we can have a region between curves. Let $f,g$ be continuous on  [a,b] such that $f(x) \geq g(x)$. We want to find the area below f and above g. This is computed by $$\int_a^b (f(x)-g(x) dx)$$. \\ We could also determine the area between $x = f(y)$ and $x = g(y)$ where $f(y) \geq g(y)$. These are more like left and right functions, where f(y) is on the right of g(y) on some interval [c,d]. $$A = \int_a^b f(y)-g(y) dy$$ \\\\ Ex. find the area of the region bounded by $f(x) = |x|$ and $g(x) = x^4$.
+\begin{enumerate}
+  \item Identify the upper function (|x|) and lower function ($x^4$) by graphing or substitution. Try a quick sketch.
+  \item Find the bounds. $${x-x^4 | x  > 0} \text { and }{x + x^4 | x < 0}$$ gives $1-x^2, 1+x^2$, so our bands are [1,1]
+  \item Compute the appropriate integral: $$A = \int_{-1}^1 |x|-x^4 dx = 2 \int_0^1  x-x^4 dx$$
+\end{enumerate}
+\begin{enumerate}
+  \item Alternatively we can compute this about the y axis, we take the correct functions $x = y^\frac{1}{4}$ and $x=y$. Then, $$A_R = 2\int_0^1 (y^\frac{1}{4} - y )dy$$ Carrying out the computation yields $\frac{3}{5}$
+\end{enumerate}
+
+Ex. Find the area bounded by $f(x) = \sqrt x$ and $g(x) = \frac{3}{2} - \frac{x}{2}$ above and the x axis below. \\\\ This is a bit different as these curves intersect, above the x axis, so we'd have to find their intersection and take two integrals. $$4x = (3-x)^2$$  $$\Rightarrow x^2-10x + 9 = 0$$ $$x = 1, 9$$. The area of this region is then $$ \int_0^1 (\sqrt{x} - 0) dx + \int_1^3 \frac{3}{2} - \frac{x}{2}-0 dx$$
+Then we carry out this computation. The upper bound of the last integral is 3 as that is the last point above or equal to the x axis of $g(x)$. Then, it goes below the axis. \\\\ We can also try integrating this on the Y axis. We solve for y for both functions, $x = 3-2y$ (right), $y= sqrt(x) \Rightarrow x=y^2$. (left). The area is then $A_R = \int_0^1 (3-2y)-y^2 dy$. \\\\ Both solutions yield $\frac{5}{3}$ for the area.\\\\
+
+Ex. Find the area bounded by the equations $2y = x$ and $y^2 = 8-x $. A good way to visualize integrating over x is by taking the vertical slices and over y is by taking horizontal ones. \\\\
+
+You might end up with curves with multiple intersections. This is rather annoying to solve, and you must find all the intersections, and figure out which functions are on top at each interval.
+
+\subsection{Volumes by Slicing}
+Say we had a solid that we could split up into the subsections. The sumall volume element of the subsection $dV = A(x)dx$. The total volume can be found by taking a cross sectional area and integrating this over the length:
+$$V = \int_a^b A(x)dx \Rightarrow \lim_{h\to \infty}\sum_{i=1}^h A(x_1^*)\Delta x$$. Eg, for a cylinder with height h, on its side with r on the vertical axis and x on the horizontal axis (h being the final value), we take the cross sectional area $\pi r^2$ which is just a constant function, and we integrate this over $0\to h$. So, $V = \int_0^h A(x)dx = \pi r^2 h$.\\\\ If we wanted to do this for a pyramid with a square base $a^2$ and height $h$. The way we slice it depends on the orientation. If we slice it along the vertical axis, the cross section is composed of squares. Now, we can find a side length $b$ of a square horizontal cut, given some distance to the top/bottom and the total height. We can slice the triangle into first right and then similar triangles, and get $$\frac{h-y}{y\frac{b}{2}} = \frac{h}{\frac{a}{2}}$$.
+In this case, b is the side length of the square cut at y, and a is the side length at the bottom. Via algebra we get $$A(y) = b^2  = a^2 (1-\frac{y}{h})^2$$. Then, we integrate over the height to get $$V = a^2 \int_0^h (1-\frac{y}{h})^2 dy$$ Via integration by substitution, we can compute this to get $\frac{1}{3} a^2 h$. Integrating this on its side gives a rather different, and easier integration onverall.\\\\Ex. Suppose we want to find a solid whose base is bounded by the circle $x^2 + y^2 = 4$ (radius 2), where the cross sections are equilateral triangles perpendicular to the X axis We should find a function for the area of the cross section.\\\\ We know how to find the base of the triangle (it's a chord) and how to find the area from the base and we combine these facts, to get $$A_\Delta = \frac{\sqrt{3}}{4}a^2$$ and the volume is then $$V = \int_{-2}^{2} \frac{\sqrt{3}}{4}2(\sqrt{4-x^2})^2 da$$
+
+\end{document}

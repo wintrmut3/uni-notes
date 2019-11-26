@@ -1,0 +1,26 @@
+\documentclass[10pt]{report}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+
+\pagestyle {fancy}
+\fancyhf{}
+\rhead{Engineering Problem 6 - Investment | James Xu | 1006058855}
+\rfoot{Page \thepage}
+
+\begin{document}
+    \section*{The Plan}
+    \subsection*{Problem Statement}
+    A program is required to interpret investment and compound interest (compounded discretely and continuously) mathematically, to compute the future value of an investment given some parameters for contract term and interest rate, as well as graphically displaying the value against time for a given set of parameters.
+
+    \subsection*{Goals}
+    \begin{enumerate}
+        \item Computation of the payoff with both discretely and continously compounding interest of an initial payment of \$100, a rate of 0.05 and a time period of 5.5 years using Matlab
+        \item Program to compute the values given variable rate and time values.
+        \item Plot of final value against time for specific values (principle = \$1, t: 1 to 35 years, r = 0.08, $t_{stepsize} = $0.5 year)
+    \end{enumerate}
+    \subsection*{Foundations}
+    The equation to compute these discrete compounded value is $$\text{future value} = \text{principal} \times (1+ \frac{r}{m})^{mt}.$$ Interestingly, the discrete value, given as $\lim_{m\to\infty}$ resembles euler's number, and indeed returns a function of $e$ (which makes sense as this will be an exponentially growing function). For reference, $$e = \lim_{m \to\infty}(1 + \frac{1}{m})^m$$ The continuous compounded value is given by $$\text{final value} = \text{principal} \times e^{rt}$$ Some reasonable ranges for interest rates would be from maybe around -5\% (though negative interest is rare) to 20\%, which will reasonably capture most benchmark interest rates in recent history in most countries. (This is the interest rate from the central bank lending to commercial banks). A reasonable range for time is 1 to 60 years, just as a guess of how long people might save for.
+
+    \section*{Process}
+    For goal (1) - the values can be computed directly by inputting the given principal, r, and t, setting m as 1.
+\end{document}

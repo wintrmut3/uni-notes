@@ -1,0 +1,57 @@
+\documentclass[twocolumn,10pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+  \section{Subspaces II}
+  20 November 2019
+  \subsection{Finding Bases}
+  With any mxn matrix A, we can row reduce it.
+  $$A_{(mxn)} \to R_{REF, (mxn)}$$ And we find that they have certain relationships and similarities. These are because the elementary operations preserve some things. Eg:
+  \begin{itemize}
+    \item The row spaces are equal: $row(A) = row(R)$. Recall, the \textbf{row space} is equal to the span of the rows of A. If $$A = \begin{bmatrix}1 &2 &-1& 3 \\ 2 & 1 & 1 & 0 \end{bmatrix}$$
+    $$row(A) = span \begin{bmatrix}1 \\ 2 \\ -1 \\3 \end{bmatrix}, \begin{bmatrix}2 \\ 1 \\ 1 \\ 0 \end{bmatrix}$$
+  \end{itemize}
+
+  When we have some matrix in row echelon form, it becomes very easy to check linear independence. $$A = \begin{bmatrix}1 &2 &-1& 3 \\ 0 & 0 & 1 & 2 \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
+    $$row(A) = span \begin{bmatrix}1 \\ 2 \\ -1 \\ 3
+    \end{bmatrix}, \begin{bmatrix} 0\\ 0 \\ 1 \\ 2 \end{bmatrix}, \begin{bmatrix} 0\\ 0 \\ 0 \\1 \end{bmatrix}$$
+
+We can put this into an equation, giving each row a parameter: $$a\begin{bmatrix}1 \\ 2 \\ -1 \\ 3
+\end{bmatrix} + b\begin{bmatrix} 0\\ 0 \\ 1 \\ 2 \end{bmatrix} + c \begin{bmatrix} 0\\ 0 \\ 0 \\1 \end{bmatrix} = \begin{bmatrix} 0\\ 0\\0\\0\end{bmatrix}$$ Thus,
+$$\begin{bmatrix}a \\ 2a \\ -a + b \\ 2b + c \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \\0 \end{bmatrix}$$ We can take a = 0 from the first line, and calculate for the rest of the rows we know that all the coefficients a,b, and c must be zero. Thus, $a=b=c=0$ is the only solution, so it is linearly independent.\\\\ This tells us that \textbf{For any row echelon R, the set of \textit{NONZERO} rows is linearly independent.}\\\\EX.\\
+If we want to find a basis for $$span of \begin{bmatrix}1 \\ 2 \\ -1 \\ 1
+\end{bmatrix}, \begin{bmatrix} 2\\ 4 \\ -2 \\ 2 \end{bmatrix}, \begin{bmatrix} 1\\ 3 \\ -1 \\0 \end{bmatrix}$$
+We can write them as row vectors and row reduce it.
+$$\begin{bmatrix}1 & 2 & -1 & 1 \\ 2 & 4 & -2 & 2 \\ 1 & 3 & -1 & 0 \end{bmatrix}\text{is equivalent to} \begin{bmatrix}1 & 2 & -1 & 1 \\ 0 & 1 & 0 & -1 \\ 0 & 0 & 0 & 0 \end{bmatrix}$$
+This provides the basis $\begin{bmatrix}1 & 2 & -1 & 1\end{bmatrix}^T, \begin{bmatrix}0 & 1 & 0 & -1 \end{bmatrix}^T$. However, these are not in the original spanning set. \\\\To find vectors that are a bit closer to the original matrix.\\
+$$\begin{bmatrix}1 & 2 & 1 \\ 2 & 4 & 3 \\-1 & -2 & -1 \\ 1 & 2 & 0 \end{bmatrix} \text{equiv to}\begin{bmatrix}1 & 2 & 1 \\ 0 & 0 & 1 \\0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} $$ The leading ones designate the columns (R1, R3) of A from which we take the basis, and provide us a basis \textbf{composed} of a subset of the originals. Thus, the basis is $$\begin{bmatrix}1 \\ 2 \\ -1 \\ 1\end{bmatrix} \begin{bmatrix}1 \\ 3 \\-1 \\0 \end{bmatrix}$$.\\
+Say we had a 2x4 matrix A. If we multiply $A\vec{x} = \vec{y}$, we know that $\vec{x}$ has to have 4 elements, and that $\vec{y}$ has 2 elements. ($\vec{x}\in\mathbb{R}^2$, $\vec{y} \in\mathbb{R}^4$). \\\\ \\We can conclude that $dim(row(A)) = 0,1,2$ but definitely not 3, so our row space can have at most 2 vectors. \\ Also, the dimension of the column space is equal to the dimension of the row space, and this is the value we call the rank. $$dim(row A) = dim(col A)$$ \\\\
+We also know that $im(A) = col(A)$. This is because the span of the columns of in A: \\\\ $col(A) = span\{\vec{c_1}, \vec{c_2}...\vec{c_n}\}$ \\ Also $$im(A) = \{ A\vec{x} | \vec{x} \in \mathbb{R}^n\}$$ But
+$$A\vec {x} = [\vec{c_1}, \vec{c_2}...\vec{c_n}]\begin{bmatrix}x_1 \\ x_2 \\ ...\\x_n \end{bmatrix}= \vec{c_1}x_1 ... \vec {c_n}x_n$$ which is equal to our column space! Just interpret $x_i$ as some arbitrary constant. \\\\
+
+\section{Summary}
+\subsection{Subspaces}
+For any matrix A:
+\begin{itemize}
+  \item We have 4 names for 3 subspaces (im(A) = col(A))
+  \item row(A) = span (rows)
+  \item col(A) = span(cols) = im(A)
+  \item null(A) = solutions to $A\vec x = 0$
+\end{itemize}
+\subsection{Connections}
+\begin{itemize}
+  \item dim(row(A) = dim(col(A))). In the REF form, the number of vectors is the rank, or the number of leading ones.  These are in the same dimension, though in different spaces.
+  \item For every column, we either have a leading one or a non-leading variable. The nonleading variables are the parameters, which give us solutions to the null space. Thus $dim(null A) = n - rank(A) = \text{number of columns} - \text{number of leading variables}$. This is known as the \textbf{Rank + Nullity Theorem} which tell us that $$rank(A) + dim(null(A)) = n$$ or: (number of cols with leading variables) + (number of cols with nonleading variables) = (total number of columns)
+\end{itemize}
+Thus we can conclude some things about a matrix without knowing anything except for the size.
+So, for a 2x4 matrix of A: \begin{itemize}
+  \item dim(row(A)) = 0, 1, or 2
+  \item dim(col(A)) = 0, 1, or 2
+  \item dim(null(A)) = 4, 3, or 2 from the previous two points
+\end{itemize}
+
+  %Temp matrix $$ \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix} $$
+  %Temp matrix $$ \begin{bmatrix} 0 & 0 & 0\\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} $$
+  %Temp matrix $$ \begin{bmatrix} 0 & 0 \\ 0  & 0 \end{bmatrix} $$
+
+\end{document}

@@ -1,0 +1,140 @@
+\documentclass[10pt, twocolumn]{report}
+\begin{document}
+  \section{Semiconductor}
+  Energy Gaps (eV):
+  \begin{itemize}
+    \item Conductor: $0$
+    \item Semiconductor $0 \leq E_g \leq 3.4$
+    \item Insulator: $\geq 3.4$ \\ ---
+    \item Opaque: $\leq 1.8$
+    \item Transparent: $\geq 3.1$
+    \item Coloured $1.8 < E_g  < 3.4 $
+  \end{itemize}
+
+  Note that when light is absorbed, we can see the complementary colour.\\\\
+
+  \textbf{Intrinsic Semiconductors}: Si
+  This may occur due to the random formation of holes from electrons moving. For pure semiconductors, there are $2.2 \times 10^{12} e^- m^{-3}$
+
+  \subsection{Extrinsic Semiconductors}
+  If we dope the silicon with a group 15 element, we're adding more electrons. This adds a a donor state, a little bit below the conduction band. \\ In this case, we have a n-type semiconductor, with equation $\sigma = nq \mu_n$. \\ n is the number of electrons in the conduction band, q is the charge of a electron, and $\mu_n$ is the mobility of electrons.\\\\ If we dope it with a group 13 element, we're adding more holes. This forms a acceptor state slightly above the valence band.\\This is a P-type semiconductor with equation $\sigma = pq \mu_p$. \\ p is the number of holes, $\mu_p$ is the mobility of positive charges, and $q$ is the charge of electrons. \\\\ Usually, we add about $10^{20} \frac{dopants}{m^3}$, which is orders of magnitude higher than the amount from the intrinsic semiconductor. (either in holes or electrons).\\ \\ $$\Delta E \propto (\frac{1}{n_l^2} - \frac{1}{n_h^2})$$ Gives the relative energy of energy levels.
+
+
+
+  \chapter{Tetrahedral APF}
+  Via trigonometric manipulation (figure 1), by which we can determine the relationship between $a$ (lattice parameter) and $r$ (atomic radius) as $a = 8 r \times sin(35)$; \\ By this, $$\frac{V_{atoms}}{V_{cell}} = \frac{4 \frac {4}{3} \times \pi r^3}{(8r \times sin (35))^3} = 0.34$$
+
+  \chapter{Thermodynamics}
+
+  \section{The Laws of Thermodynamics}
+    \begin{enumerate}
+        \item For an isolated system $$\Delta U = 0$$\\For a closed system $$\Delta U = q  + W $$ q= heat in\\W = work done on system\\$$\Delta U = q - P\Delta V$$ can be rearranged to $$q = \Delta H = \delta U  + P \delta V$$. This is how we introduce enthalpy.
+        \item The Entropy of the Universe is always increasing ($\Delta S_{univ}= \Delta S_{system} + \Delta S_{surroundings} > 0$)\\$\Delta S_{System} - \frac{q}{T} > 0$\\$T\Delta S_{System} - q > 0$ \\ $T\Delta S_{system}- \Delta H > 0$ \\ But we're comfortable with energy decreasing, so we can multiply by $-1$ to get a quantity $\Delta G = \Delta H - T\Delta S$
+        \item
+    \end{enumerate}
+    Things occur on their own (\textit{spontaneously}) without the inpput of extra energy occur due to an increase in the entropy of the universe.
+    \begin{itemize}
+        \item G = Gibbs energy = $\Delta G = \Delta H - T\Delta S$
+        \item H = Enthalpy
+        \item J = Joules
+        \item K = Boltzmann
+        \item M = Molarity
+        \item N = number of moles
+        \item P = pressure
+        \item q = Heat transfer
+        \item R = gas constant
+        \item S = entropy = $\frac{q_{reversible}}{T}$
+        \item T = temperature (thermodynamic, K)
+        \item U = Internal energy
+        \item V = Volume
+        \item W = Work
+    \end{itemize}
+    There are three types of systems:
+    \begin{enumerate}
+        \item Open - Both energy and matter can be exchanged through the system and environment.
+        \item Closed - Only energy is exchangable
+        \item Isolated - Neither energy nor matter can be exchanged.
+     \end{enumerate}
+     In some special, useful cases (Constant P/1atm or Only expansion, PV work) gives $\Delta H = \Delta V + P \Delta V$.\\\\
+     An analogy for entropy - (q = sneezing) - In a crowded street, with high temperature vs. a quiet library (low temp)\\ At absolute zero, there is zero entropy. You can pick out a particle and know for sure that it's at the lowest energy. However, at infinite temperature, particles have equally distributed energies, and you'd have no idea what the energy of the particle is. Entropy then, is our level of certainty when blindly selecting a particle.
+     \subsection{Internal Energy}
+     We can have a lot of types of energy - translational/kinetic, rotational/angular, vibrational, electron translational, electronic spin, bond energy (eg. laser), nuclear ... etc\\We don't really care or know all the energy sources, and thus we only consider changes in \textbf{Internal Energy $\Delta U$}.\\ For entropy, since we know that at 0K we have S = 0, we can also define an absolute entropy.\\\\ As we often have processes occur with open atmosphere, we have constant P. The only work is ``PV'' work. This is given by $$W = P\Delta V$$A useful defined quantity of enthalpy accounts for work pushing back the atmosphere. $$\Delta H = \Delta U + P \Delta V$$\\
+     \subsection{Spontaneity: Types of Processes}
+     With given $\Delta H$,$\Delta S_{sys}$ is it Spontanteous?
+     \begin{center}
+         \begin{tabular}{c c c c}
+             $\Delta H$ & $\Delta S$ & Spontaneity & Example \\
+             - & + & all temperatures & combustion of fuel \\
+             - & - & low temperatures & freezing of water \\
+             + & +  & high temperatures & melting of ice \\
+             + & - & never & n/a
+         \end{tabular}
+     \end{center}
+     We can actually create a plot of $G = -TS + H$ of G against T. If we take a random point on the G axis, that is the G-intercept, or H.\\\\ We position the solid phase at the bottom of the g axis, the liquid phase above it, and the gas phase far above that ($\Delta H_{fusion} << \Delta H_{Vaporization}$)\\ We know that entropy is always positive so we have a negative slope for the ``solid'' line,  a steeper decreasing line for the liquid line and a very steep slope for the gas line. These lines all happen to intersect. \\\\ We know that for low Gibbs energies and low temperatures, we get a region that belongs to ice. Then, there's a small region where the liquid phase is stable, (273K to 373K) and then a region where the gas phase is stable. This graph is for 1 atm. \\\\ However at low (vapour) pressures, the intersections are different, and the vapour phase has a steeper slope than before, which can cause us to go from solid to gas without going through liquid.\\\\
+     \textbf{Standard State} is the state of an element at 298.15K and 1 bar.
+     \subsection{State vs Path Function}
+     A state function does not involve how a value was attained, only the current value at the point. \\ A path function does. (Work , q(Heat))
+     \subsection{Combustion of Octane}
+     $$2C_8H_{18} + 25O_2 \rightarrow 16H_2O + 8 O_2$$
+     $$\Delta H^C = 16 \Delta H_F (H_2O) + 8 \Delta H_F O_2 - (2\Delta H_F C8H_{18} + 25\Delta H_F O_2)$$
+     $$\Delta_F H^C = -10160 J $$ per two mols of Octane.\\\\ PV work: Starting out with 25 mols of gas, we end up with 34 mols of gas, and we have gained 9 mols. \\\\ We can plug this into the ideal gas formula $$P\Delta V = \Delta n R T$$ $$ = 9 (8.31)(298K)$$ $$=22 kJ. $$
+
+
+
+
+
+%  <--Jia Notes-->
+%   Thermodynamics is the study of spontaneous systems.
+%   There are three types of systems:
+%   \begin{enumerate}
+%     \item Open - Both energy and matter can be exchanged through the system and environment.
+%     \item Closed - Only energy is exchangable
+%     \item Isolated - Neither energy nor matter can be exchanged.
+%   \end{enumerate}
+%   Sometimes, we can assume that the earth is a closed system. The mass exchange is negligible compared to the mass of the earth.\\ \\
+%   \textbf{Intensive} properties are independent of the size of a system (eg. APF) \\
+%   \textbf{Extensive} properties are dependent of the size of the system.
+%
+%   \section{State vs Path Functions}
+%   $U$ is our internal energy. \\ \\
+%   A \textbf{State Function} does not depend on the path taken. These are more common, and the value of the function is determined regardless of how it is attained. Eg. Enthalpy $\Delta H$, $\Delta U$ (Which is why Hess' law works), summation, multiplication etc. It depends only on the present state of the system\\
+%
+%   A \textbf{Path Function} does depend on the path taken. Thse are rarer, and the value of the function depend on how it is attained/the process. Some examples are $w$ (work done) and $q$ (heat transfer), or matrix multiplication.
+%
+%   \subsection{Internal Energy}
+%
+%
+%   \textbf{Internal Energy $U$} is the sum of the potential and kinetic energies of all components in a system . This includes atomic-scale vibrations, movement of particles, angle flexion, bonding energy, gravitational ... it's a state function.
+%
+%   It may be changed by
+%   \begin{enumerate}
+%     \item releasing/absorbing heat
+%     \item by doing work ($W = f\times d$)
+%     $$P_{ext}Ad = P_{ext}\Delta V$$.
+%
+%     If work is done by the system (eg. Expansion) the convention is for it to be (-)(negative).
+%     If work is done on the system by the environment, it is (+)(positive. \\
+%
+%     Say we had some $P_1V_1$ (1, 2); $P_2V_1$ (1,1), $P_2V_2$ (2,1),$P_1V_2$(2,2). We calculate work done for $P_1V_1$ to $P_1V_2$ is $P_1(V_2-V_1)$. Then, to go from (2,2) to (2,1), the volume is constant so no work is done. The net work done is $-P_1(V_2-V_1)$. \\\\ Alternatively, going from (1,2) to (1,1), we have a net work of (P2)(V2-V1). Moving across to (2,1), we have no change in volume. Thus, though we end up at (2,1) in both paths, we have different values, so we conclude that work done is a \textbf{path function}.
+%
+%
+%   \end{enumerate}
+% \section{The Laws of Thermodynamics}
+% \begin{enumerate}
+%   \item The $U_{univ} = CONST$ . The energy of the universe remains constant.
+%
+%     \item $\Delta U = \Delta U_{Sys} + \Delta U_{Env}$
+%     \begin{enumerate}
+%       \item $\Delta U = q - v$, q = work in, v = work out (negative by conv.)
+%       \item $\Delta U = q - p\Delta v$. Note that if the reaction occurs in a closed vessel forcing constant volume, we have $\Delta U = q_v$ (Energy flow at volume V). If it is only constant pressure, $\Delta U = q_P - P\Delta V
+%     \end{enumerate}
+%
+% \end{enumerate}
+% \section {Enthalpy $H$}
+% $$H = U + PV$$. This is a state function, and always true, independent of conditions. H and U differ by PV only.
+% $$\Delta H = \Delta U + P \Delta V \Rightarrow \Delta H = q_P$$. \\\\
+% Ex. Melting Ice. \\\\
+% At 1 ATM, $0^\circ C$: $H_2O_{(s)} \to H_2O_{(l)}$. \\ The Heat absorbed is 6.01 kJ/mol. The molar volumes of ice and water are $0.0197 L$ and $0.0180 L$  \\\\ Say we want $\Delta H$, $\Delta U$ $$\Delta H = q_P = 6.01 kJ/mol$$. It is under constant pressure so we can just take this value, as it measures heat flow. $$\Delta U = \Delta H - P\Delta V =6e.01 - 1 atm\times 0.0017 L = 6.01 - 0.0017 L\cdot atm$$ A Litre Atmosphere is about 101.3 J, so we take the substitution and we get $6010 + 0.17 = 6010.17 kJ/mol$. \\\\ The change in internal energy is greater than the change in enthalpy, because work has been done on the surroundings to melt the ice (compression, volume change), but this amount is near negligible.
+
+
+\end{document}

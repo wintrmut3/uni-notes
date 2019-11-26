@@ -1,0 +1,104 @@
+\documentclass[10pt, twocolumn]{report}
+\usepackage{amssymb}
+\begin{document}
+  \chapter{Load, Pressure and Stress Block}
+  For a uniform stress block with cross section A, we can multiply the point stresses over A to get the total force.
+  $$\sigma A = F$$ \\
+  $$\sigma = \frac{F}{bh}$$
+  However, for a bending moment, we get a symmetrical dual-wedge shaped stres block. Assuming a positive bending moment, it is in compression on the upper surface and in tension on the lower surface, and zero in the middle (for a uniform prismatic member). If the dimension going in to the page is $b$, then we can get the area of our compression (and tension, since they're equal) block as $$C = \frac{\sigma h}{2} \frac{1}{2}b = \frac{\sigma h b}{4}$$. Also, since these are equal and opposite forces, they we can introduce a centroid at 2/3 the way to the high edge giving a total separation between the tension and compression block centroids of $\frac{2h}{3}$. The force couple generates a moment of the force times the separation, which gives $M = \frac{\sigma hb^2}{6}$
+
+  (notes are continued from 14 November)
+  (Last time: Rectangular cross section/linear elastic) \\ \\
+
+  The resultant couple formed bending moment internally is a compression-tension couple separated by $\frac{2h}{3}$, giving a resultant of
+  $\frac{\sigma bh}{4} = C = T$ and a moment $M = C\times\frac{2h}{3} = \frac{\sigma bh^2}{6}$. \\ This can be used to go from moment to stress or stress to moment.\\\\
+
+  \textbf{EX:} Given a simply supported beam 6 metres long, separated into 2m thirds, where the right two thirds are covered by a uniform pressure block with an intensity of $6 \frac{kN}{m}$ and a concentrated pressure P acting in the middle of the pressure block. \\\\ We can easily compute the reaction froces as $8.333P$ on left extreme and $16.666P$ on the right extreme \\\\
+
+  If we cut the beam at some point Q, from 2m along the beam to 3.1m along the beam from the left, we get a cube. We get the dimensions W x H x L = 100mm x $80\times4$ x 1100mm.\\\\
+  If we split the height to get a 2d projection of the 3D pressure distribution, we get a uniform stress block for the first 80mm from the top in C, a wedge shaped SB. for 80-160mm in C, a wedge for 160-240 in tension, and a uniform prismatic stres block in T from 240-320.\\\\The bitrapezoidal stres block couple has uniform regions because they're strained more (closer to the surface), and past their plateau, so they cannot pickup more stress and are thus linear. This is a \textit{Yielded Cross Section}.\\\\
+  We should be able to go from stress $\sigma$ to moment M, but we're not expected to be able to come up with the stress distriubtion given a moment. \\\\
+  Find:
+  \begin{enumerate}
+    \item The total compressive force at Q due to bending moment
+    \item The internal bending moment at Q
+    \item The value of concentrated load P
+   \end{enumerate}
+   We are given that the outer fibres experience 60 MPa of compression or tension (top or bottom, resp.)
+
+   Thus, our trapezoids are oriented with parallel faces vertical. We can take two separate stress blocks for the rectangle and triangle and introduce them at the resultants, and find the total force resultant by taking a moment.
+
+   The volume of the rectangle is $60 \times 80 \times 100 = 480kn$. Measured from the top this is 40mm away (centroid)
+
+   The volume of the triangular prism is $60 \times \frac{80}{2} \times 100 = 240 kn$, and the resultant is introduced a third of the way down the second 80mm section. Via symmetry we take them for the bottom too. \\\\
+
+   Also, via geometry, we have two couples, the first and fourth section separated by 240mm and the second and third section separated by 106.7 mm. \\\\
+
+   1) The compressive resultant is easy. It is simply the sum of the two concentrated compressive sections, $C_1 + C_2 = 480 + 240 = 720 kN$\\\\
+   2) The total moment is given by couple equation: $\circlearrowright^+ \Sigma M = 240 \times 106.7 + 480 \times 240 = 140.8 kN m $ \\\\
+   3) To solve the concentrated load at P, we can cut the beam at Q, and replace the internal moment as a function of P. Recall, when we do this we need to keep the distributed force and reintroduce it as a concentrated force ($6kN/m\times1.1m = 6.6 kN$). We can cut the left side as the reaction is a function of P. \\\\ If we take a moment about Q, then \\$M_Q + 6.6 \times 0.55 - (8.3333P) \times 3.1$. Having solved $M_Q = 140.8$ we can solve for P as 115.8 kN. \\\\
+
+   \section{T-Beam and \\ complex geometry}
+   If we had a upwards T-shaped prismatic member, with a bending moment applied to it, the centroid (or \textbf{natural axis}) has a stress of zero by definition. Unlike a rectangular prismatic member however it has a non-midheight natural axis position. \\\\ If the whole cross section is defined, we can introduce the natural axis as a point in the centroid. Given a positive bending moment, We have a $\sigma_1$ at the top, in compression (negative) and a $\sigma_2$ at the bottom, in tension, crossing zero at the natural axis height. \\\\ If we want to go from stress to moment, we have to take some additional considerations in mind.
+   \begin{itemize}
+     \item The flange (vertical bar) will require you to split the value at its height, and we'll have two resultants for the compression. This is because the width (going into the page) is different for the wide top of the T  and the slimmer vertical bar.
+    \item The bottom is given by a single triangular prismatic resultant.
+    \item We may calculate the moment about any point.
+   \end{itemize}
+   Essentially, a bit more complex geometry (even if we hold the linear elastic assumption) causes a significant amount more problems. Next class we will be given a formula relating moment and stress, which may be used ubiquitously except in the case where it is asked.
+
+   \section{The Beam Equation}
+   This is covered in chapter 3 of the complementary notes. (Stresses due to bending of beams)
+
+   \subsection{Assumptions}
+   \begin{enumerate}
+     \item The material is linear elastic. The stress is proportional to strain, and Hooke's law is valid. (I.e. no yielding occurs)
+     \item Plate sections prior to bending remain planar after bending
+     \item Bending stresses are independent of the stresses caused by internal axial and shear forces:
+     \begin{itemize}
+       \item Cutting a beam with a couple of forces on it (not just a pure bending moment) develops a host of internal forces. Given the dimensions of the section, we should see that the bending moment and axial force affect the stress on the planar surface.
+       \item The axial force will create a prismatic uniform stress block in tension or compression, shifting the moment-based stress distribution to the right or left. We can remove it, by adding (superposing) the whole block to every value (endpoints) and linearly interpolating.
+       \item However, we should assume that the final resultant stress distribution over the face is the same.
+     \end{itemize}
+   \end{enumerate}
+
+\textbf{EX} Say we have an infintesimal slice of a prismatic beam experiencing a bending moment.  \\Before bending, it is a rectangle. Due to the second assumption, the planar cross section is still planar, but experiences no warping (high order defo) but becomes trapzoidal. \\\\
+
+To make this easier, to compute we introduce the distortion asymmetrically to one side , taking the whole (double) deformation on one side. (the right usually, and keeping the left vertical/constant). The line x = dx splits it in the middle vertically. Then we have a trapezoid, and it is split vertically and horizontally so that above the horiz. split we have some strain $\epsilon y$ experienced by a fiber y away from the natural axis.\\\\ The original length of the fibre is dx, so the change in length is $\epsilon y \times dx$. where dx is the original width of the plate. \\ $\epsilon$ is prop to y. Since the material is linearly elastic, we know that stress is prop to strain, the constant being Young's modulus E.\\ Thus, $\sigma \propto y \Rightarrow \sigma = Ky$\\ \\ Determining the constant of proportionality K results us to locate the reference axis (Nt.Axis) where Y is measured from. This may not be midheight, for nonuniform shapes. We know \begin{enumerate}
+  \item Stress resultant C and T are equal
+  \item The C and T force couple generates an internal bending moment $M$.
+\end{enumerate}
+\textbf{Ex}
+
+Say we had a profile cross section whose stress distribution (bowtie) was asymmetric vertically, as the natural axis isn't positioned at the centre.
+
+We take the cross section face and take an infinitesimal  area $dA$, a vertical distance y. The force is $dF = KydA$.
+Integrating the force over the area, we get a lot of interesting things, and a rather unpleasant amount of integrals. You get $$M= K\int y^2 dA = k \times I_z $$ Introducing $k as \frac{\sigma}{y}$ we get (to be memorized) the \textbf{Bending Formula} $$\sigma = \frac {M\cdot y}{I_z}$$, where y is measured from the natural axis. \\\\
+
+This can allow us to rather simplify the stress equations for a nonuniform (eg. T) shaped beam. We can obtain the moment if we wanted. \\\\ Say we had a T beam, the distance to the top being $h_1$ and bottom as $h_2$ from the natural axis. $$M = \frac {\sigma I_z} {h_1}$$ for bending on the z axis. We can generalize this to $$\sigma = \frac{M\cdot y}{I}$$ or $$M = \frac{\sigma}{y}\cdot I$$ for the correct axes of moment and I.\\
+
+\textit{The Bending stress formula isn't something we're responsible for, but we should know the assumptions for which it is valid.} \\\\
+
+\section{Applications of the Bending Stress Formula and Symmetric/Asymmetric Considerations}
+
+
+Say we wanted to find the stress at some fibre given a bending moment. We'll have the distance $b$ away from the natural axis $C$, positioned at the centroid. We calculate $I_{axis}$ where the axis is the one on which the moment is about. \\\\ For this example, $I_z$ is used. Visually, we can compute $\sigma_b$ by inspecting the negative/positive aspects. We must use a negative for the compression stresses. $\sigma$ is positive if in tension, and negative if in compression. $$\sigma b = \frac{-M b}{I_z}$$ $$\sigma b = \frac{-M\cdot -d}{I_z} = \frac{Md}{I_z}$$. We assign a negative to the moment, and multiply it by distance. $b$ is above the natural axis and is under compression with positive distance, d is below the natural axis and under tension with negative distance.\\\\ex. A built up beam fabricated with HSS 203 x 102 x 8 and two steel plates 10mm x 300mm. Neglecting the self weight of the beam, det. the max compressive bending stress caused by the applied load. \\ From the front view (Y-Z plane) the Hollow Structural Section is a rectangular ring, with a steel plate welded to the top and bottom. The long side of the rectangular ring is horizontal, with length 203 mm, and the height is 102mm. The thickness of the ring is 8mm. Each plate is flat and long on the horizontal, with thicknes 100mm and length 300 mm. \\\\ The side view (XY plane)illustrates a simply supported beam (Roller left). In the first (from the left) 1.5 m there is no load.  A uniform distributed load covers 5m from that, at 11kN/m with a concentrated load in the middle (4m from the end). Then, 1.5mm from the right there is again no load. It is symmetrical, and 8m long. \begin{enumerate}
+  \item Work out the external support reactions. Both are 31.5kN up along Y.
+  \item Then starting at left side x=0, we can draw the \textbf{shear diagram}. We know that the shear is +31.5 kN. From x=0 to x=1.5 there's no load so the shear is constant.
+  \item We extend the shear diagram to the point of the concentrated 8kn load decreasing linearly to 4kN which will generate a \textbf{discontinuity}, so we jump to -4 kn. Then, along the rest of  the distributed load we end up with -31.5kN which remains constant to the end.
+  \item Solve the change in moment with a positive shear area from 0 to 47.25 ($1.5 \times 31.5$) over 1.5m. Then we compute the trapzoidal area, taking us to 91.6, but with a parabolic interpolation. The other half 4m is symmetric. The whole beam experiences a positive moment. The maximum moment is $91.62$ kN/m.
+  \item If you are able to see the symmetry, you could've taken a cut at the middle and exposed the maximum moment there because it would be in the middle.
+  \item We locate the centroid of the beam, which gives us the natural axis. The bending is about the Z axis. Also, the maximum comprressive stress with a positive moment is at the topmost fibre. The distance then, is the distance from the natural axis to the top fibre. Now we have M and y, we need $I_z$.
+  \item To solve for $I_z$ we split into basic shapes, and sum the inertias appropriately. We can also take the value from the table in the complementary notes. We take $7.54 \times 10^6 mm^4$ from the table by comparing axis lengths. Also, we take, via parallel axis theorem, $I_{z2} = \frac{300 \times 10^3}{12} + (300\times10)\times (56mm)^2$. Note the 56 isn't from the top of the plate, but the centroid of the welded flat plate to the centroid of the whole structure. \\ We can then take the total moment of inertia $$I_z = I_{z1} + 2I_{z2} = 26.4\times 10^6 mm^4$$ The stress is then $$\frac{91.62\times 10^6 Nm \times 61mm}{26.4 \times10^5 mm^4} = -211.7 \frac{N}{mm^2}$$ Recall that this is compressive, so we introduce the negative. \\\\ Note when assigning values to $\sigma$ we can introduce a negative in the bending stress formula for a \textit{+ve} moment and vv for negative moment, or treat it as absolute and figure it out by inspection.
+  \item If we look at the C stress on the topmost fibre 1.5m away from the left, the only thing that changes is the moment ($91.62 \to 47.25$) and we can use the bending formula as usual.
+\end{enumerate}
+\subsection{Max Bending Stress for an Asymmetric Section}
+\begin{enumerate}
+  \item Say the bending moment diagram has a double curvature (a concave down and up section), with a maximum negative and positive moment. \\ Recall with negative curvature, the top fibres are in tension, and with positive curvature the top fibres are in compression. \\ So we need to find the absolute max moment in the diagram. Just decide which of the moments is larger and use that as M in the bending moment diagram. (\textbf{Asymmetric moments only})
+  \item For a T beam, we lose horizontal symmetry.  For the top fibres, we have a distance cTop from the natural axis and for the bottom fibres we have a distance cBot. Now, to find at each $M_i$ $M_{1,2}$ we need $\sigma_top_i = \frac{-M_i \times c_{top, bot}}{I_z}$. We end up with \textbf{4} things to compare. At each of the maxes/mins, $M_{1,2}$ we must check the stress at $C_{top, bot}$. Half will be compressive and half will be tensile. \textbf{You cannot assume which one is maximum, as both the moments and the distances are different!}
+\end{enumerate}
+
+
+
+
+\end {document}
