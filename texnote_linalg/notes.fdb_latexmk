@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1574706038 "notes.tex" "notes.pdf" "notes" 1574706039
+["pdflatex"] 1574816743 "notes.tex" "notes.pdf" "notes" 1574816745
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1573678705 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1573676772 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1573676773 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -43,9 +43,9 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1573700590 4741323 948b3df6bce8014586ddcd31952fa3c4 ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1573700733 4289902 2ffa52c83aaedc798793b607c73e1b8b ""
   "c:/texlive/2019/texmf.cnf" 1573700558 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "notes.aux" 1574706039 1551 aa3aeca27c3b40fe7ebd9a06400dbe84 "pdflatex"
-  "notes.tex" 1574706037 9589 286233d4ee91554b5998160210e1f157 ""
+  "notes.aux" 1574816744 1873 67629ff57f72ff07698ada0dab25d1e8 "pdflatex"
+  "notes.tex" 1574816741 12365 0770471f90d0256ad60a1e80e6eb35c3 ""
   (generated)
-  "notes.pdf"
-  "notes.log"
   "notes.aux"
+  "notes.log"
+  "notes.pdf"
