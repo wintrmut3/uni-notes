@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1574895591 "notes.tex" "notes.pdf" "notes" 1574895592
+["pdflatex"] 1574981989 "notes.tex" "notes.pdf" "notes" 1574981991
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1573678705 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1573676772 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1573676772 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -34,6 +34,7 @@
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1573676773 32587 65067f817f408bc71a7312f3d9828a9b ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1573676773 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1573676773 36118 fad905eba93cff5bce1e185fe980a177 ""
+  "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1573676773 34694 870c211f62cb72718a00e353f14f254d ""
   "c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1573676773 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
   "c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty" 1573676773 13829 94730e64147574077f8ecfea9bb69af4 ""
   "c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd" 1573676773 961 6518c6525a34feb5e8250ffa91731cff ""
@@ -50,9 +51,9 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1573700590 4741323 948b3df6bce8014586ddcd31952fa3c4 ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1573700733 4289902 2ffa52c83aaedc798793b607c73e1b8b ""
   "c:/texlive/2019/texmf.cnf" 1573700558 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "notes.aux" 1574895592 1780 67ec569efbfa66299056b82045e41aa4 "pdflatex"
-  "notes.tex" 1574895589 17349 b07929f38e8f8219712c9a9ee0371186 ""
+  "notes.aux" 1574981991 2035 724cbc2fdad9c21b2d81430c7b94e274 "pdflatex"
+  "notes.tex" 1574981989 20003 1cd2f5fe0032524a26edda31549a58fe ""
   (generated)
-  "notes.aux"
   "notes.pdf"
+  "notes.aux"
   "notes.log"
