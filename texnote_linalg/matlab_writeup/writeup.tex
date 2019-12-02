@@ -34,16 +34,27 @@
     \end{itemize}
 
     For goal (1) - the values can be computed directly by inputting the given principal, r, and t, setting m as 2. The computation can be carried out in simply matlab by assigning the appropriate values for the variables and plugging them into the two equations given.\\\\
+    
     For goal (2) - The variables for r and t are initialized as vectors and assigned via the \textit{linspace} keyword a range of values that are reasonable. Using a nested for loop and string formatting (\textit{sprintf}), a list of ouptuts is generated comparing each interest rate and time period, and outputted to the console. They are evaluated with both the continuous and discrete methods.\\\\
+    
     For goal (3), some thinking is required to create a stairstep graph for the discretely evaluated compound interest. While Matlab might have some ways to do this internally, I came up with a somewhat elegant way to compute this. This subproblem was one of rounding the time value to the closest half year, so I designed this equation: $$round_{\frac{1}{2}}(x) = \frac{\left \lfloor{2x}\right \rfloor }{2}$$ utilizing the properties of the floor (round down) function to round down the value to the closest half. \\ Graphing the value of the continuously evaluated function was trivial, just plotting t against f(t), where f(t) is given in the Foundations for continous compounded value. Plotting the discretely evaluated function required me to alter the t value, smoothing it to a stairstep using the $round_{\frac{1}{2}} (t)$ and evaluate $f_d(t)$ again using the appropriate equation given in the Foundations section.
 
 
     \section*{Conclusion}
+    For goal (1), the following output is obtained:
+    \includegraphics[width=\textwidth]{capture.PNG}\\\\
+    For goal (2), if the last parameter (set to zero) in lines 13 and 14 is set to 1, the output for variable time and interest rates   (the range of values is given in the Foundations section) will be output to console. This data is also stored by default in the matrix m, but this data is unlabeled, unlike the output, which is given in format 'Compounded [Discrete/Continuous] interest with rate [r] pct [/with m periods per year] for [t] years with intial investment [vi] is  [final value]'. \\\\
+    For goal (3), this plot was obtained by following the outlined procedure above - though the continously evaluated function was processed as a symbolic variable rather than a vector. 
     \includegraphics[width=\textwidth]{graph_final_2d.jpg}
-
+    The final values are obtained:\\
+    Discretely evaluated: t  = 35 y, final value = \$ 15.57\\
+    Continuously evaluated: t = 35 y, final value = \$ 16.44
+    
     \section*{$\frac{1}{2}$ Page Critique of Computer Aided Problem Solving}
 
     - Computers can take some input and generate an output
     - With properly defined input and instructions, a computer can expedite the problem solving process, as sometimes problem solving requires one to obtain numeric values or visualizations that are otherwise extremely tedious
+    
+    The core functionality of a computer as a tool in problem solving is to follow a \textit{very} specific procedure to map some given input to some output. This essentially describes the process of computation, and it is worth noting that the inputs and outputs could be in entirely different modes - numerical, visual, auditory, physical, etc. The process of problem solving, particularly regarding the empirical sciences, may involve such a mapping as a step or as a way to obtain a final solution, and for this reason computers can be particularly helpful, though one should observe that with regards to less rigorous domains of study computation may be wholly unnecessary. Additionally, though the modes of data may vary, they must be reducable to numeric (computer-readable) formats - audio may be transformed via the FFT algorithm, visuals displayed via pixel matrices and other such concepts but things like ethics are harder to condense into numeric format (though not impossible, and that answers an entirely different question). \\Computers may be thus used in creating mappings in cases where manual computation is tedious, and create immeasurable benefit in problem solving due to their higher precision and staggering (many orders of magnitude more operations per second) speed improvements over even the most technically skilled human operators. Some examples are computation of trigonometric values, logarithms, and 3D visualization, which all are possible by hand (eg. lookup table requiring incredibly large amounts of time and resources to compute, slide rule and a lot of drafting tools respectively), which computers can solve with speeds that are many orders of magnitude faster than humans.\\However, though computers have 
 
 \end{document}
