@@ -149,12 +149,21 @@ Ex. Volume of a sphere about y, with radius r.\\ We start with a vertical semici
 Ex. Find the volume of the solid bounded above by $f(x) = 3x - x^2$ and below by $y= 0$ over [0,3] around the y axis. By the disc method, we'll probably have to do a subtraction, and we can do this in one step with the shell method. The volume is given by $V = \int_0^3 2\pi x(3x - x^2)dx$ which can be easily integrated. \\ \\Q: Why is the disc method problematic? \\ We'd have to subtract an inner region from an outer one. y = $3x - x^2$ would need to be expressed in terms of y by factoring, and you'd get a bundt cake looking thing, and we'd have to use the washer method and do a LOT of different integrations.\\\\
 Ex. Find the volume of the region by revolving around the x axis bounded by $y = 2-x^2$ and $y= x^2$. By the disc method: $$V = \int_0^1 \pi (2-x^2)^2 - (x^2)^2 dx$$. \\\\ By the shell method, we'd integrate in y. The height of our cyinders are given by the value of the function on wrt y and we have to break it as it looks piecewise, and we get our volume as $$V =\int_1^2 2\pi y \sqrt{2-y}dy + \int_0^1 2\pi y \sqrt y dy$$\\\\
 
-\subsection{Arc Length and Surface Area}
-If we had some arbitrary curve, a piece of f, we could break the curve up [a to b], and get infinitesimal striaght line sections $dl$, which corresponds to some $\frac{dy}{dx}$ right triangle. We get via pythagorean theorem $dl = \sqrt{dx^2 + dy^2} = \sqrt{1 + \frac{dy}{dx}^2} dx$. We can put this into an integral and get $\mathbb{L} = \int_a^b dl = \int_a^b \sqrt {1-\frac{dy}{dx}} dx $. \\\\
-Applied to the circumference of a circle, we take the top half ,and get $y = \sqrt{r^2 - x^2}$ and integrate to get $\frac{-x}{r^2 - x^2}$ and finally $$L  = 2 \int_{-r}^r \sqrt{1 + \frac{x^2}{r^2-x^2}} dx$$
+\subsection{Arc Length}
+If we had some arbitrary curve, a piece of f, we could break the curve up [a to b], and get infinitesimal striaght line sections $dl$, which corresponds to some $\frac{dy}{dx}$ right triangle. We get via pythagorean theorem $dl = \sqrt{dx^2 + dy^2} = \sqrt{1 + (\frac{dy}{dx})^2} \cdot dx$. We can put this into an integral and get $\mathbb{L} = \int_a^b dl = \int_a^b \sqrt {1-(\frac{dy}{dx})^2} \cdot dx $. \\\\
+Applied to the circumference of a circle, we take the top half ,and get $y = \sqrt{r^2 - x^2}$ and integrate to get $\frac{-x}{r^2 - x^2}$ and finally $$L  = 2 \int_{-r}^r \sqrt{1 + \frac{x^2}{r^2-x^2}} dx$$ Taking the common denominator we get $\sqrt{\frac{r^2}{r^2 - x^2}}dx$ in the integrand so $dl = \frac{r}{\sqrt{r^2 - x^2}}dx$. We can pull out the r in the denominator as it's constant, and we can get $$\frac{2r}{r}\int_{-r}^r \frac{dx}{\sqrt{1-\frac{x^2}{r^2}}} $$
+We can use trig substitution and get $4r (arcsin(1)- arcsin(0)) = 4r \times \frac{\pi}{2}=2\pi r$
+\subsection{Surface Area of Solids of Revolution}
+We extend the arc length concept to be applied to surface areas. \\ By dividing infintesimal segments $dl$ out of the whole arc, we get ribbon or sheet or cylinders with some rectangular area. Around the x axis, the area is $dS = dl \times 2\pi f(x)$. \\ Integrating, we get $$S = \int_a^b ds = \int 2\pi\cdot dl f(x)dx = 2\pi f(x) \sqrt{1-(\frac{dy}{dx})^2}dx$$ about x. If we swap axes, we get $$\int_a^b 2\pi x\sqrt{1+(\frac{dy}{dx})^2} dx $$
 
+For example, the surface area of a sphere of radius r:\\
+$$S = \int_{-r}^r 2\pi \sqrt{r^2 - x^2} \times \frac{r}{r^2-x^2}dx$$ gives $4\pi r^2$.
 
-
+\subsection{Work}
+The work done by a force in moving an object from x = a to x = b, and say the force is non constant and given by F(x), we get $$W  = \int_a^b F(x)dx$$
+The problem ends up being constructing F(x) which requires practise. \\
+Ex. A cable weighs 2 lbs/ft, and is attached to a bucket filled w/ coal that weighs 800 lbs. The bucket is initally at the bottom of a 500 ft well. We should determine (a) the work to get to the middle of the well from the bottom, and (b) midpoint to top and (c) total work (summing a+b) \\ Our initial formulation of this problem is knowing that force changes, as we need to pull up less cable once we lift it, and add the constant mass of the bucket. (ie. cable mass is a function of x), $F(x) = (m_B + m_C (x)) \times g $ where relative to a coordinate system (draw a diagram!) $m_c (x) = 2 (500-x)$ so $F(x) = 2(900-x)\cdot g$, and the integral of this takes points from 0 to 250, then 250 to 500, then we can add them for c.\\\\
+Another standard probelm has to do with a tank in the shape of an inverted cone, with a height $h = 15m$ and a base radius $r = 4m$ filled to a depth of $d = 12 m$. The question is \\How much work is required to pump all the water out of the top, assuming $\rho = 1 Mg/m^3$. Visualizing this as cross sectional area means we should inspect how the volume changes and how much force it takes to lift individual, infinitesimal discs of the cone on the xsection. We can find a ratio for the radius $r(x)/4 = x/15$ of the disc by similar triangles, and a function for the distance $D(x) = 15 - x$. $dV = \pi(r(x))^2 dx$
 
 
 
