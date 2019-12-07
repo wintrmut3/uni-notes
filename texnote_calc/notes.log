@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.13)  4 DEC 2019 17:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.13)  6 DEC 2019 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -685,8 +685,13 @@ Underfull \hbox (badness 3503) in paragraph at lines 167--169
  []
 
 
-Underfull \hbox (badness 2253) in paragraph at lines 167--169
-\OT1/cmr/m/n/12 to take the con-stant terms out of the
+Underfull \hbox (badness 10000) in paragraph at lines 167--169
+
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 167--169
+\OT1/cmr/m/n/12 How much work is req. to pump out
  []
 
 [11] [12
@@ -712,7 +717,7 @@ y10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c
 :/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/
 2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on notes.pdf (12 pages, 180188 bytes).
+Output written on notes.pdf (12 pages, 180381 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream
