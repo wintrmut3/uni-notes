@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper]{geometry}
+\geometry {margin = 0.5 in}
+\begin{document}
+    \section*{Some Relevant Equations for CIV100}
+
+    \begin{table}[h!]
+        \begin{center}
+            \begin{tabular}{|c | c |}
+            \hline
+            \textbf{Equation} & \textbf{Usage}  \\
+            \hline
+            $\sum M,F_{x,y,z} = 0$ & Setting up equilibrium equations in 2D and 3D. \\\hline
+            $\vec R  = R\vec x + R \vec y R cos \theta (x) + R sin\theta (y)$ & Decomposing 2D vectors \\\hline
+            $R cos \theta  = R_x, R sin\theta  = R_y$ &  Decomposing 2D vectors \\\hline
+            $||R|| = \sqrt{F_{Rx}^2 + F_{Ry}^2 + F_{Rz}^2}$ & Magnitude of Resultant force \\\hline
+            $\theta = arctan |\frac{F_{Ry}}{F_{Rx}}| $ & Direction of Resultant force \\\hline
+            $M_o = F \times d$ & Moment from force and $\perp$ distance d \\\hline
+            $\sum M_{R,CCW} = \sum M_{forces} + \sum M_{ext}$ & Sum of Moments \\\hline
+            $T = CONSTANT$ & Cable forces in pulleys\\\hline
+            $F = \omega l$ & Resultant from distributed load of intensity $\omega$ over l\\\hline
+
+            $M_{pin/hinge} = 0$ & Moment at hinges are zero in statics.\\\hline
+
+            $F_{spring} = k\Delta x$ & Spring force with spr. const. K \\\hline
+
+            $\vec F_1 = -\vec F_2$ & Two Force Member\\\hline
+
+            $u_{AB} = \frac{AB}{||AB||}$ & Unit vector along AB by dividing by $||AB||$\\\hline
+
+            $1 = cos^2\alpha + cos^2\beta + cos^2 \gamma$ & Angles in 3D using Pyth. \\\hline
+
+            $U_{AB} = \frac{(X_B-X_A)i + (Y_B - Y_A)j + (Z_B - Z_A)k}{\sqrt{(X_B-X_A)^2 + (Y_B - Y_A)^2+ (Z_B - Z_A)^2}}$ & Decomposed unit vector in 3D of $\vec A$ to $\vec B$\\\hline
+
+            $\sum M_o = \sum_i \vec r_i \times \vec {F_i}$ & 3D moment, r is from tail to any point on LOA of $\vec F$.\\\hline
+
+            $M_A = u_a \cdot (\vec r \times \vec F)$ & Axial moment in 3D, solve with triple scalar product\\\hline
+
+            $\vec M_a = ||M_A||\times \vec u_a$ & Moment about axis by taking projections \\\hline
+
+            $\sigma = \frac{F}{A}$ & Engineering Stress analagous to pressure\\\hline
+
+            $\frac{N}{mm^2} = MPa$ & A useful conversion\\\hline
+
+            $\epsilon = \frac{l-l_o}{l}$ & Engineering Strain is unitless.\\\hline
+
+            $\sigma = E\epsilon$ & Young's Modulus (E) analagous to Hooke's Law\\\hline
+
+            $\Delta L = \frac{PL}{AE}$ & Elongation of Truss Members given a real force and area. \\\hline
+
+            $\frac{dV(x)}{dx} = -\omega (x)$ & Slope of shear diagram is negative distributed load\\\hline
+            $\frac{dM(x)}{dx} = V(x)$ & Slope of moment diagram is shear value\\\hline
+
+            $\Delta V(x) = \int -\omega dx$ & Change in shear is negative area under distributed load\\\hline
+
+            $\Delta M(x) = \int V dx$ & Change in shear is area under shear diagram\\\hline
+
+            $A = hb; \bar{x} = b/2; \bar{y} = h/2$ & Rectangular Centroid\\\hline
+
+            $A = \frac{1}{2} hb; \bar{x} = b/3; \bar{y} = h/3$ & Triangular Centroid, taken at widest angle.\\\hline
+
+            $\bar{x} = \frac{\sum A_i x_i}{\sum A_i}$  & Centroid in general. $A_i$ replacable by weight, mass or length.\\\hline
+
+            $P = \gamma \cdot z = \rho \cdot g \cdot z$ & Hydrostatic pressure at a point with head z. \\\hline
+
+            $P_R = \rho \cdot g \cdot z \cdot b \cdot w$ & Hydrostatic pressure 3D volumetric resultant. \\\hline
+
+            $F_H = F_x ; F_v = F_y \pm W$ & Equiv. Liquid block reaction forces, variable $F_y$ orientation\\\hline
+            $I_{xx} = \frac{bh^3}{12}; I_{yy} = \frac{b^3h}{12}$ & Moments of inertia for rectangular sections.\\\hline
+
+            $Ix' = I_{xx} + A\cdot d^2$ & Parallel Axis theorem, $I_{xx}$ designates centroidal axis.\\\hline
+
+            $C = T$ & Symmetric bending stress blocks form a couple.\\\hline
+
+            $C_R = V(\sigma_C)$ & Interpret resultant bending stress as volume.\\\hline
+
+            $\sigma = \frac {M_z \cdot y}{I_z}$& Beam Bending formula (linear elastic).\\\hline
+
+            $\sigma = \frac{M_{max} \cdot LF \cdot y_{max}}{I_z}$ & BBF for design\\\hline
+
+            $S = \frac{I_z}{y_{max}}$ & Section modulus for tabular application.\\\hline
+
+            $S_{req} = \frac{M_{max} \times LF} {y_{max}}$ & Section modulus for design.\\\hline
+
+            $M_{couple} = F \times d_{sep}$ & Moment from force couple\\\hline
+            \end{tabular}
+
+        \end {center}
+    \end{table}
+\end{document}
