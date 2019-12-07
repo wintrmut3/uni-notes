@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.13)  2 DEC 2019 18:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.13)  4 DEC 2019 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -649,7 +649,49 @@ Underfull \hbox (badness 3803) in paragraph at lines 163--167
 \OT1/cmr/m/n/12 Vi-su-al-iz-ing this as cross sec-tional area
  []
 
-[11] (./notes.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--167
+\OT1/cmr/m/n/12 The in-finites-i-mal weight is equal to
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 167--169
+\OT1/cmr/m/n/12 Another way to think of this is that
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 167--169
+\OT1/cmr/m/n/12 we're di-vid-ing the wa-ter into n pieces,
+ []
+
+
+Underfull \hbox (badness 3895) in paragraph at lines 167--169
+\OT1/cmr/m/n/12 from force into vol-ume into area into
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--169
+
+ []
+
+
+Underfull \hbox (badness 3503) in paragraph at lines 167--169
+\OT1/cmr/m/n/12 When do-ing the in-te-gra-tion, take care
+ []
+
+
+Underfull \hbox (badness 2253) in paragraph at lines 167--169
+\OT1/cmr/m/n/12 to take the con-stant terms out of the
+ []
+
+[11] [12
+
+] (./notes.aux) ) 
 Here is how much of TeX's memory you used:
  1421 strings out of 492164
  15460 string characters out of 6129087
@@ -658,22 +700,22 @@ Here is how much of TeX's memory you used:
  11377 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,10n,31p,1091b,183s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pf
-b><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/tex
-live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
-><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texli
-ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/t
-exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on notes.pdf (11 pages, 177208 bytes).
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c
+:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/
+2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texm
+f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on notes.pdf (12 pages, 180188 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

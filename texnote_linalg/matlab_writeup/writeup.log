@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.13)  2 DEC 2019 17:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.13)  3 DEC 2019 18:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -117,34 +117,63 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
+)
+(c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+(c:/texlive/2019/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+(c:/texlive/2019/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+(c:/texlive/2019/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+(c:/texlive/2019/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count101
+\Gm@cntv=\count102
+\c@Gm@tempcnt=\count103
+\Gm@bindingoffset=\dimen114
+\Gm@wd@mp=\dimen115
+\Gm@odd@mp=\dimen116
+\Gm@even@mp=\dimen117
+\Gm@layoutwidth=\dimen118
+\Gm@layoutheight=\dimen119
+\Gm@layouthoffset=\dimen120
+\Gm@layoutvoffset=\dimen121
+\Gm@dimlist=\toks20
 ) (./writeup.aux)
 \openout1 = `writeup.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
- (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+
+(c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
-\scratchdimen=\dimen114
+\scratchcounter=\count104
+\scratchdimen=\dimen122
 \scratchbox=\box29
-\nofMPsegments=\count102
-\nofMParguments=\count103
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count104
-\MPscratchDim=\dimen115
-\MPnumerator=\count105
-\makeMPintoPDFobject=\count106
-\everyMPtoPDFconversion=\toks21
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen123
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks22
 ) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -171,16 +200,9 @@ Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
 (c:/texlive/2019/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-
-(c:/texlive/2019/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2019/11/07 v1.0c TeX engine tests
-)))))
+))))
 (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(c:/texlive/2019/texmf-dist/tex/generic/iftex/ifpdf.sty
-Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -198,34 +220,57 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: legalpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 867.24002pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=1011.78pt
+* \textwidth=469.75502pt
+* \textheight=867.24002pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
-9.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
+1.
 (c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
- [1{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
-
- []
-
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
 
 Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
@@ -237,67 +282,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
  []
 
 
-LaTeX Warning: File `capture.PNG' not found on input line 45.
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
 
 
-! Package pdftex.def Error: File `capture.PNG' not found: using draft setting.
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 ...udegraphics[width=\textwidth]{capture.PNG}
-                                                  \\\\
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ []
 
-<graph_final_2d.jpg, id=12, 562.1pt x 421.575pt>
+<Capture.PNG, id=1, 260.47313pt x 216.05719pt>
+File: Capture.PNG Graphic file (type png)
+<use Capture.PNG>
+Package pdftex.def Info: Capture.PNG  used on input line 47.
+(pdftex.def)             Requested size: 250.93842pt x 208.151pt.
+<graph_final_2d.jpg, id=3, 562.1pt x 421.575pt>
 File: graph_final_2d.jpg Graphic file (type jpg)
 <use graph_final_2d.jpg>
-Package pdftex.def Info: graph_final_2d.jpg  used on input line 48.
-(pdftex.def)             Requested size: 345.0pt x 258.74924pt.
+Package pdftex.def Info: graph_final_2d.jpg  used on input line 50.
+(pdftex.def)             Requested size: 469.75502pt x 352.31299pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--52
+Underfull \hbox (badness 10000) in paragraph at lines 46--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--52
+Underfull \hbox (badness 10000) in paragraph at lines 46--54
 
  []
 
-[2] [3]
-Overfull \hbox (2.64966pt too wide) in paragraph at lines 53--53
-[]$[]$ \OT1/cmr/bx/n/14.4 Page Cri-tique of Com-puter Aided Prob-lem Solv-
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--54
+
  []
 
-[4 <./graph_final_2d.jpg>] [5] (./writeup.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--54
+
+ []
+
+[1{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+] [2 <./Capture.PNG> <./graph_final_2d.jpg>] [3] (./writeup.aux) ) 
 Here is how much of TeX's memory you used:
- 2333 strings out of 492164
- 30710 string characters out of 6129087
- 104880 words of memory out of 5000000
- 6673 multiletter control sequences out of 15000+600000
- 6657 words of font info for 25 fonts, out of 8000000 for 9000
+ 2776 strings out of 492164
+ 37336 string characters out of 6129087
+ 120640 words of memory out of 5000000
+ 7121 multiletter control sequences out of 15000+600000
+ 5650 words of font info for 21 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,10n,45p,3573b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><
-c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texliv
-e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on writeup.pdf (5 pages, 136242 bytes).
+ 51i,10n,45p,3573b,193s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2
+019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c
+:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on writeup.pdf (3 pages, 130398 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 50 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

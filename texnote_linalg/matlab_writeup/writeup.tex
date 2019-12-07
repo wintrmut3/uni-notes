@@ -2,6 +2,8 @@
 \usepackage{fancyhdr}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage[legalpaper, margin=1in]{geometry}
+
 \graphicspath{ {./} }
 
 \pagestyle {fancy}
@@ -42,19 +44,19 @@
 
     \section*{Conclusion}
     For goal (1), the following output is obtained:\\
-    \includegraphics[width=\textwidth]{capture.PNG}\\\\
-    For goal (2), if the last parameter (set to zero) in lines 13 and 14 is set to 1, the output for variable time and interest rates   (the range of values is given in the Foundations section) will be output to console. This data is also stored by default in the matrix m, but this data is unlabeled, unlike the output, which is given in format \'Compounded [Discrete/Continuous] interest with rate [r] pct [/with m periods per year] for [t] years with intial investment [vi] is  [final value]\'. \\\\
+    \includegraphics[width=250px]{Capture.PNG}\\\\
+    For goal (2), if the last parameter (set to zero) in lines 13 and 14 is set to 1, the output for variable time and interest rates   (the range of values is given in the Foundations section) will be output to console. This data is also stored by default in the matrix m, but this data is unlabeled, unlike the output, which is given in format\\ \'Compounded [Discrete/Continuous] interest with rate [r] pct [/with m periods per year] for [t] years with intial investment [vi] is  [final value]\'. \\\\
     For goal (3), this plot was obtained by following the outlined procedure above - though the continously evaluated function was processed as a symbolic variable rather than a vector. \\\\
     \includegraphics[width=\textwidth]{graph_final_2d.jpg}
     The final values are obtained:\\
     Discretely evaluated: t  = 35 y, final value = \$ 15.57\\
-    Continuously evaluated: t = 35 y, final value = \$ 16.44
+    Continuously evaluated: t = 35 y, final value = \$ 16.44\\\\
 
-    \section*{$\frac{1}{2}$ Page Critique of Computer Aided Problem Solving}
-
-    - Computers can take some input and generate an output
-    - With properly defined input and instructions, a computer can expedite the problem solving process, as sometimes problem solving requires one to obtain numeric values or visualizations that are otherwise extremely tedious
-
+    The plan was carried out as specified, and since this was a relatively simple problem no modifications were required. Matlab was applied in this problem to visualize the discrete and continous compound interest for given timescales and rates, which would have been incredibly tedious to plot and compute by hand. Through the use of simple functions requiring only rudimentary math, computations were automatically carried out to accomplish each goal. In the order of continuous then discrete, for goal 1, the values of \$131.65 and \$131.21 were obtained and for goal 3 the values of \$15.57 and \$16.44 were obtained.
+    \pagebreak
+    \section*{Critique of Computer Aided Problem Solving}
     The core functionality of a computer as a tool in problem solving is to follow a \textit{very} specific procedure to map some given input to some output. This essentially describes the process of computation, and it is worth noting that the inputs and outputs could be in entirely different modes - numerical, visual, auditory, physical, etc. The process of problem solving, particularly regarding the empirical sciences, may involve such a mapping as a step or as a way to obtain a final solution, and for this reason computers can be particularly helpful, though one should observe that with regards to less rigorous domains of study computation may be wholly unnecessary. Additionally, though the modes of data may vary, they must be reducable to numeric (computer-readable) formats - audio may be transformed via the FFT algorithm, visuals displayed via pixel matrices and other such concepts but things like ethics are harder to condense into numeric format (though not impossible, and that answers an entirely different question). \\Computers may be thus used in creating mappings in cases where manual computation is tedious, and create immeasurable benefit in problem solving due to their higher precision and staggering (many orders of magnitude more operations per second) speed improvements over even the most technically skilled human operators. Some examples are computation of trigonometric values, logarithms, and 3D visualization, which all are possible by hand (eg. lookup table requiring incredibly large amounts of time and resources to compute, slide rule and a lot of drafting tools respectively), which computers can solve with speeds that are many orders of magnitude faster than humans.\\However, though computers have the potential to massively expedite the problem solving process, they are still vulnerable to a number of failure modes. Even if the input fed into a computer program is perfect, the mapping must be created by a human operator (assuming it's not written by a self-programming program which is again the subject of another very interesting but irrelevant paper) and the creation of this mapping from input to output is prone to all sorts of human error, and requires very precise understanding of the problem and a deep understanding of how exactly to map the input to the output. Even with all the computing resources in the world, I would be unable to solve a difficult electromechanics problem even if I had all the necessary inputs, because I wouldn't understand it and I couldn't tell a computer how to solve it for me. Not understanding the problem enough to encode it in a way that is understandable by a computer (also requiring programming knowledge) renders a computer about as useful as a paperweight for problem solving. Additional vulnerabilities are data corruption, radiation damage (rare, but can flip bits and destroy/alter output) and the quirks of various programming languages (see Javascript Equality Memes for reference), among others.\\ In conclusion, computers can vastly expedite the problem solving process for tedious, complex or repetitive tasks in systems that are numerically operationalizable (also, maybe deterministic) but are vulnerable to a host of errors and require a deep initial understanding of the problem to be able to use them and some technical skill as well. They are not an all purpose problem solving machine (yet) but rather are valuable tools that can immeasurably speed up and refine the problem solving process in the hands of a skilled operator.
+    \pagebreak
+
 
 \end{document}
