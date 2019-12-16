@@ -1,0 +1,66 @@
+\documentclass[10pt, twocolumn] {article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\section{Syllabus Subsections}
+    \begin{enumerate}
+         \item{Systems of Linear Equations}
+         \item{RREF, Rank}
+         \item{Vectors, Dot, Cross Products}
+         \item{Inverses}
+         \item{Linear Transformations}
+         \item{Projection, Reflection, Rotation}
+         \item{Determinant and Cofactors}
+         \item{Eigenvalues, Eigenvectors}
+         \item Diagonalization
+         \item{Subspaces}
+         \item{Span}
+         \item{Linear Independence}
+         \item{Basis}
+         \item{Dimension}
+         \item{Orthogonality}
+         \item{Gram-Schmidt Algorithm}
+         \item{Orthogonal Diagonalization}
+     \end{enumerate}
+     \vspace{10mm}
+     Not all of these will be covered in this document, only the following sections:
+     \begin{itemize}
+         \item Gram-Schmidt
+         \item Subspaces
+         \item Span
+         \item Orthogonality
+         \item Basis
+     \end{itemize}
+     \section{Subspaces}
+     A set U is a subspace if:
+     \begin{itemize}
+         \item The zero vector is in U ($\vec 0 \in \mathbb{R}$)
+         \item U is closed under vector addition
+         \item U is closed under scalar multiplication
+     \end{itemize}
+     The \textbf{image space} of A ($im(A)$) = $\{A\vec x | \vec x \in \mathbb{R}^n\} = col(A)$ \\ The \textbf{column space} of A is the set of all linear combinations of the columns of A, or the span of the columns of A.\\ We can verify that the image space is a subspace by checking it against the subspace conditions.
+     $$im(A) = 0$$
+     $$\vec x, \vec y \in im(A) \Rightarrow A\vec b = \vec x, A\vec c = \vec y, A (x+y) = k \Rightarrow Ab + Ac = x + y$$ Recall that we need to prove that there exists a vector d such that $A\vec d = x +y$. So, we factor to get $A(b+c) = \vec x + \vec y$
+     \subsection{General Procedure to Prove something is a Vector Space or Linear Transformation etc.}
+     Define the variables:
+     $$\lambda \in \mathbb{R}, x\in im(A)$$
+     Define the boundary conditions:
+     $$\vec x = A\vec b \Rightarrow \lambda \vec x = \lambda A \vec b$$
+     Find what we need to satisfy:
+     $$\lambda x = A (\lambda  b)$$
+     Rearrange, algebraically:
+     (just switch A, $\lambda$ in boundary condition step).
+     \subsection{Linear Independence}
+     \textbf{Linear Independence} for a set of vectors $V_1$ to $V_k$ occurs when $a_1V_1 ... a_kV_k = 0$ only if $a_1 ... a_k = 0$. That is, there is no vector in the set that is a linear combination of the others.
+     \section{GSA}
+     The purpose of GSA is to turn a set of bases into a set of orthogonal bases.\\
+     Say we have some basis vectors $x_1, x_2, x_3$ and we want to turn them into some $f_1, f_2, f_3$ such that all $f_i \cdot f_j = 0$ for all $f_i \neq f_j$. \\\\We subtract the projection onto all previously orthogonal vectors onto each of the next vectors, iteratively - we project $x_1$ onto $x_1$ and get it back, we get $f_2 = x_2 - proj_{x_1}x_2$. Then, we take $f_3 = x_3 - proj_{x_1}x_3 - proj_{f_2}x_3$ \\\\
+     A general formula for GSA of some basis vectors $x_i$ into an orthogonal set $f_i$
+     $$f_n = x_n - \sum_i^n \text{proj}_{f_i}x_n$$
+     Do not try this on a set of vectors that is linearly dependent, as one of the vectors (redundant) end up going to zero.\\\\ To check, put the vectors as columns in a matrix A, reduce A to REF, and take the columns in A corresponding to the columns in $A_{REF}$ with leading ones as the independent bases.
+     \section{Orthogonal Diagonalization}
+
+
+
+\end{document}
