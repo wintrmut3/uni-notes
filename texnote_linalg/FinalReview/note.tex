@@ -60,6 +60,15 @@
      $$f_n = x_n - \sum_i^n \text{proj}_{f_i}x_n$$
      Do not try this on a set of vectors that is linearly dependent, as one of the vectors (redundant) end up going to zero.\\\\ To check, put the vectors as columns in a matrix A, reduce A to REF, and take the columns in A corresponding to the columns in $A_{REF}$ with leading ones as the independent bases.
      \section{Orthogonal Diagonalization}
+     Spectral Theorem: If A is a real symmetric matrix $A^T = A$, then A has an orthogonal diagonalization.\\\\
+     A general procedure for orthogonally diagonalizing a symmetric matrix A is as follows:
+     \begin{enumerate}
+         \item Find the eigenvalues $\lambda_i$ of A by finding solutions to the characteristic polynomial $C_\lambda A = det (A-\lambda I)$.
+         \item Find the eigenvectors for each lambda by finding $null(A-\lambda I)$ for all $\lambda_i.$
+         \item For the eigenspaces $E_{\lambda_i}A$ with dimension greater than 1 (eg. the multiplicity of $\lambda i \geq 2$, there are two or more eigenvectors for $\lambda_i$), use GSA on the two vectors if they're not already orthogonal to make them orthogonal. Different eigenspaces will be orthogonal to each other already.
+         \item Write the diagonalizing matrix P with eigenvectors as cols and diagonal D (positioned with respective eigenvalues multiples of I for the eigenvectors in P), and normalize all values in P by dividing each eigenvector by its magnitude to get an orthogonal matrix for P.
+     \end{enumerate}
+     
 
 
 
