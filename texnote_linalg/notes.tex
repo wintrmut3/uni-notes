@@ -131,6 +131,40 @@ Let $x_1 ... x_k$ be a set of vectors.
 $f_1 = x_1$
 $f_2 = x_2 - proj_{f_1} x_2$
 $f_3 = x_3 - proj_{f_1} x_3 - proj_{f_2} x_3$ ... we keep on taking projections and stripping away orthogonal bits until:\\ we get a zero. Generally:
-$f_k = x_k = \sum_i^k-1 proj_{f_i}x_k$
+$f_k = x_k = \sum_i^k-1 proj_{f_i}x_k$\\\\
+
+BREAK \\\\
+
+Proof of Part 2: Give a subspace U and vector v, let p be the sum of the projections of v onto some orthogonal basis f1 ... fn of U. (2) Then (v-p) is perpendicular to p, and |v-p| is minimized. The proof of part (2):\\
+$x = p + (x-p) \\ |v-x| = |v-(p-(x-p))| \\ = |v-p - (x-p) |$ \\ v-p (in U perp) and x-p in U. We square this and get  $|v-p|^2 + |x-p|^2$ by pythagoreas;\\ will be greater than $|v-p|^2$.\\\\THM: Let U be a subspace in Rn, and T(x) be $proj_U(\vec x)$.\\ \begin{enumerate}
+	\item T(x) is linear
+	\item im(T) = U (all the projections of something into a subspace form the subspace)
+	\item ker(T) $\sim$ null(T), but kernel is the nomenclature for a transformation. This is equal to $U^\perp$. Thus, we know that $$dim(U) + dim(U^\perp) = n$$ for $\mathbb{R}^n$
+\end{enumerate}
+
+ex. Find $U^\perp$ for U = span (1 3 -1)T, (2 1 1)T, so that $U^\perp = [x y z] \cdot$ the vectors in the span are zero. So we're finding the null space of $\begin{bmatrix} 1& 3 &-1 \\2 & 1 & 1\end{bmatrix}$. Alternatively, in R3 you could just take the cross product of two vectors. \\\\
+
+Let A = [x1, x2 ... xn] nxn matrix, xi are vectors then
+$A^TA = \begin{bmatrix} \vec x_i^T \cdot \vec x_j\end{bmatrix}$\\ If $A^TA = I$, so the $A^{-1} = A^T$ then $\vec x_i^T \cdot \vec x_j$ = 0 if i isn't j, and 1 if i is itself. (Dirac Delta Function $\delta_{ij}$). We get orthonormal vectors like this. \\\\ As a theorem, for any nxn matrix P (P, because they tend to be related ot projections), the following are equivalent
+\begin{enumerate}
+	\item P is invertible with $inv(P) = P^T$
+	\item The columns of P are orthonormal
+	\item The rows of P are orthonormal
+\end{enumerate}
+Any such matrix is called orthogonal (though, perhaps we should call them orthonormal).\\\\
+
+\subsection{Orthogonal Diagonalization}
+Let A be diagonalizable (A = $PDP^{-1}$) where there is a choice of the matrix P, such that it is orthogonal. \\ This tells us $A = PDP^T$. IF we take the transpose of that, we get $A^T = (P^T)T D^T P^T = A$. So A has to be symmetric. ($D^T$ is D) \\\\
+\subsection{Spectral Axis Theorem}
+Every symmetric matrix can be diagonalized by a orthogonal matrix. \\\\ Def: A is orthogonally diagonalizable if there exists an orthogonal matrix P such that D = $P^{-1}AP = P^TAP$. For this to happen, P is diagonalizing implies that the columns of P are eigenvectors, and P is orthogonal suggests the cols of P are orthonormal. Therefore, we need an orthonormal set of n eigenvectors.\\\\ Thm: If A can be Orth. Diagonalized, and $\alpha$ and $\beta$ are distinct eigenvalues with eigenvectors $x,y$ respectively, then x is orthogonal to y (They come pre-orthogonalized, you don't need to use GSA). \\ PROOF \\ What happens when we take a transform on one side of a dot product and move it to the other side:
+$Ax = \alpha x$ $Ay = \beta y$ We'll start with $Ax \cdot y \\ = \alpha x \cdot y \\ (Ax)^T y = x^T A^T y = x^T(A^T y = x(Ay) = x(\beta y)$. A is symmetric so the transpose is equal to itself. Since alpha and beta give the same output, we know they are zero, and the dot product is zero so they're orthogonal.
+
+\subsubsection{Process}
+\begin{enumerate}
+	\item Find the eigenvalues and eigenvectors as done before
+	\item For every eigenvalue with multiplicity > 1, use the GSA to create an orthogonal basis
+	\item From this, we get an orthogonal, but not orthonormal basis for the matrix, so now we just need to divide every basic eigenvector by its magnitude to fufill orthonormality.
+\end{enumerate}
+The problem is that, if the matrix is not symmetric, we cannot use this. If the matrix is not symmetric, you can \textit{ONLY USE REGULAR DIAGONALIZATION!}
 
 \end{document}

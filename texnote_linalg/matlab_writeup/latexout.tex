@@ -1,0 +1,63 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c}{\PYZpc{} Part A: Computation}
+\PY{n}{calc\PYZus{}cdi}\PY{p}{(}\PY{l+m+mi}{100}\PY{p}{,}\PY{l+m+mf}{0.05}\PY{p}{,}\PY{l+m+mf}{5.5}\PY{p}{,}\PY{l+m+mi}{2}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{;} \PY{c}{\PYZpc{}We can suppose there are 2 compounding periods per year, according to part C}
+\PY{n}{calc\PYZus{}cci}\PY{p}{(}\PY{l+m+mi}{100}\PY{p}{,}\PY{l+m+mf}{0.05}\PY{p}{,}\PY{l+m+mf}{5.5}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{;}
+
+\PY{c}{\PYZpc{} Part B: Take in r, t as vectors. (Compute, for a given r and t the final value assuming initial value is 1)}
+\PY{c}{\PYZpc{} The output for final value for every interest rate against every timeperiod is suppresed}
+
+\PY{n}{v\PYZus{}r} \PY{p}{=} \PY{n+nb}{linspace}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{20}\PY{p}{,} \PY{l+m+mi}{26}\PY{p}{)}\PY{o}{.*}\PY{l+m+mf}{0.01}\PY{p}{;}
+\PY{n}{v\PYZus{}t} \PY{p}{=} \PY{n+nb}{linspace}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{120}\PY{p}{)}\PY{o}{.*}\PY{l+m+mf}{0.5}\PY{p}{;}
+\PY{n}{m} \PY{p}{=} \PY{n+nb}{zeros}\PY{p}{(}\PY{n+nb}{length}\PY{p}{(}\PY{n}{v\PYZus{}r}\PY{p}{)}\PY{p}{,} \PY{n+nb}{length}\PY{p}{(}\PY{n}{v\PYZus{}t}\PY{p}{)}\PY{p}{)}\PY{p}{;}
+\PY{n}{for }\PY{l+s}{i = 1:length(v\PYZus{}r)}
+\PY{n}{  for }\PY{l+s}{j = 1:length(v\PYZus{}t)}
+    \PY{n}{calc\PYZus{}cdi}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{v\PYZus{}r}\PY{p}{(}\PY{n+nb}{i}\PY{p}{)}\PY{p}{,} \PY{n}{v\PYZus{}t}\PY{p}{(}\PY{n+nb}{j}\PY{p}{)}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{;} \PY{c}{\PYZpc{}to unsuppress output, just set the last parameter (0) to 1}
+    \PY{n}{calc\PYZus{}cci}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{v\PYZus{}r}\PY{p}{(}\PY{n+nb}{i}\PY{p}{)}\PY{p}{,} \PY{n}{v\PYZus{}t}\PY{p}{(}\PY{n+nb}{j}\PY{p}{)}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{;} \PY{c}{\PYZpc{}to unsuppress output, just set the last parameter (0) to 1}
+    \PY{n}{m}\PY{p}{(}\PY{n+nb}{i}\PY{p}{,}\PY{n+nb}{j}\PY{p}{)} \PY{p}{=} \PY{n}{calc\PYZus{}cci}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{v\PYZus{}r}\PY{p}{(}\PY{n+nb}{i}\PY{p}{)}\PY{p}{,} \PY{n}{v\PYZus{}t}\PY{p}{(}\PY{n+nb}{j}\PY{p}{)}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{;}
+\PY{n}{  end}
+\PY{l+s}{end}
+
+\PY{c}{\PYZpc{}Part C: Produce a plot of the payoff of one dollar at 8\PYZpc{} interest per year, with continuous and discrete compounding, for maturities of one to 35 years, in steps of 6 months.}
+
+\PY{c}{\PYZpc{}discrete time}
+\PY{n}{grid }\PY{l+s}{on}
+\PY{n}{hold }\PY{l+s}{all}
+\PY{n}{m\PYZus{}int} \PY{p}{=} \PY{l+m+mi}{2}\PY{p}{;}
+\PY{n}{dcr\PYZus{}t} \PY{p}{=} \PY{n+nb}{linspace}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{35}\PY{p}{,} \PY{l+m+mi}{1000}\PY{p}{)}\PY{p}{;}
+\PY{n}{dcr\PYZus{}val} \PY{p}{=} \PY{p}{(}\PY{l+m+mf}{1.}\PY{o}{+}\PY{l+m+mf}{0.08}\PY{o}{/}\PY{n}{m\PYZus{}int}\PY{p}{)}\PY{o}{.\PYZca{}}\PY{p}{(}\PY{n}{m\PYZus{}int}\PY{o}{.*}\PY{n+nb}{floor}\PY{p}{(}\PY{l+m+mi}{2}\PY{o}{*}\PY{n}{dcr\PYZus{}t}\PY{p}{)}\PY{o}{./}\PY{l+m+mi}{2}\PY{p}{)}\PY{p}{;} \PY{c}{\PYZpc{}flooring the twice the value is like rounding down to a half. it\PYZsq{}s not super elegant but it works.}
+\PY{n}{plot}\PY{p}{(}\PY{n}{dcr\PYZus{}t}\PY{p}{,} \PY{n}{dcr\PYZus{}val}\PY{p}{,} \PY{l+s}{\PYZsq{}}\PY{l+s}{r\PYZhy{}\PYZsq{}}\PY{p}{)}\PY{p}{;}
+\PY{c}{\PYZpc{}continuous time}
+\PY{n}{syms }\PY{l+s}{cont\PYZus{}t}
+\PY{n}{fplot}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{*}\PY{n+nb}{exp}\PY{p}{(}\PY{l+m+mf}{0.08}\PY{o}{*}\PY{n}{cont\PYZus{}t}\PY{p}{)}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{0} \PY{l+m+mi}{35}\PY{p}{]}\PY{p}{)}
+
+\PY{n}{xlabel} \PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{Time [Years]\PYZsq{}}\PY{p}{)}
+\PY{n}{ylabel}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{Value of Investment over Time [\PYZdl{}]\PYZsq{}}\PY{p}{)}
+\PY{n}{legend} \PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{Discretely Updating Compound Interest\PYZsq{}}\PY{p}{,} \PY{l+s}{\PYZsq{}}\PY{l+s}{Continously Updating Compound Interest\PYZsq{}}\PY{p}{)}
+\PY{n}{title}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{Discretly vs Continously Evaluated Compound Interest\PYZsq{}}\PY{p}{)}
+\PY{c}{\PYZpc{} axis([0,35,0,100])}
+
+
+
+
+
+
+\PY{c}{\PYZpc{}todo}
+\PY{c}{\PYZpc{} \PYZhy{} might want a two 3d plots of T, R and CDI/CCI}
+\PY{c}{\PYZpc{} \PYZhy{} input}
+\PY{c}{\PYZpc{}function declarations}
+\PY{c}{\PYZpc{}print compounded discrete interest}
+\PY{k}{function}\PY{+w}{ }cdi \PY{p}{=}\PY{+w}{ }\PY{n+nf}{calc\PYZus{}cdi}\PY{p}{(}vi, r,t,m, b\PYZus{}print\PY{p}{)}\PY{+w}{ }\PY{c}{\PYZpc{}bprint gives}
+    \PY{n}{cdi} \PY{p}{=} \PY{n}{vi}\PY{o}{*}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{+}\PY{n}{r}\PY{o}{/}\PY{n}{m}\PY{p}{)}\PYZca{}\PY{p}{(}\PY{n}{m}\PY{o}{*}\PY{n}{t}\PY{p}{)}\PY{p}{;}
+    \PY{k}{if}\PY{p}{(}\PY{n}{b\PYZus{}print} \PY{o}{==} \PY{l+m+mi}{1}\PY{p}{)} \PY{c}{\PYZpc{}print iff specified by final param}
+      \PY{n}{sprintf}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{Compounded discrete interest \PYZbs{}nwith rate \PYZpc{}f pct \PYZbs{}n with \PYZpc{}d periods per year \PYZbs{}n for \PYZpc{}f years \PYZbs{}n with initial investment \PYZpc{}f is \PYZbs{}n \PYZpc{}f\PYZsq{}}\PY{p}{,}  \PY{n}{r}\PY{o}{*}\PY{l+m+mi}{100}\PY{p}{,} \PY{n}{m}\PY{p}{,} \PY{n}{t}\PY{p}{,} \PY{n}{vi}\PY{p}{,} \PY{n}{cdi}\PY{p}{)}
+\PY{n}{    end}
+\PY{l+s}{end}
+
+\PY{c}{\PYZpc{}print compounded continuous interest}
+\PY{k}{function}\PY{+w}{ }cci \PY{p}{=}\PY{+w}{ }\PY{n+nf}{calc\PYZus{}cci}\PY{p}{(}vi, r, t, b\PYZus{}print\PY{p}{)}
+\PY{+w}{   }\PY{n}{cci} \PY{p}{=} \PY{n}{vi} \PY{o}{*} \PY{n+nb}{exp}\PY{p}{(}\PY{n}{r}\PY{o}{*}\PY{n}{t}\PY{p}{)}\PY{p}{;}
+   \PY{k}{if}\PY{p}{(}\PY{n}{b\PYZus{}print} \PY{o}{==} \PY{l+m+mi}{1}\PY{p}{)}
+      \PY{n}{sprintf}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{Compounded continuous interest \PYZbs{}nwith rate \PYZpc{}f pct \PYZbs{}nfor \PYZpc{}f years\PYZbs{}nwith initial investment \PYZpc{}f \PYZbs{}nis \PYZpc{}f\PYZsq{}}\PY{p}{,}  \PY{n}{r}\PY{o}{*}\PY{l+m+mi}{100}\PY{p}{,} \PY{n}{t}\PY{p}{,} \PY{n}{vi}\PY{p}{,} \PY{n}{cci}\PY{p}{)}
+\PY{n}{  end}
+\PY{l+s}{end}
+\end{Verbatim}

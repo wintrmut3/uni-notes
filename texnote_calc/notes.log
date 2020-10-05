@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.13)  27 NOV 2019 17:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.13)  6 DEC 2019 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -547,7 +547,154 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--144
 
  []
 
-[9
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
+
+ []
+
+
+Underfull \hbox (badness 4156) in paragraph at lines 148--150
+\OT1/cmr/m/n/12 Q: Why is the disc method prob-lem-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 150--150
+\OT1/cmr/m/n/12 By the shell method, we'd in-te-grate in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 153--154
+\OML/cmm/m/it/12 dl$\OT1/cmr/m/n/12 , which cor-re-sponds to some $[]$ right
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 154--154
+\OT1/cmr/m/n/12 Taking the com-mon de-nom-i-na-tor we get
+ []
+
+
+Underfull \hbox (badness 4341) in paragraph at lines 154--156
+\OT1/cmr/m/n/12 We can use trig sub-sti-tu-tion and get
+ []
+
+
+Overfull \hbox (41.7169pt too wide) detected at line 157
+\OML/cmm/m/it/12 S \OT1/cmr/m/n/12 = [][] \OML/cmm/m/it/12 ds \OT1/cmr/m/n/12 =
+ [] 2\OML/cmm/m/it/12 ^^Y \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 dlf\OT1/cmr/m/n
+/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dx \OT1/cmr/m/n/12 = 2
+\OML/cmm/m/it/12 ^^Yf\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )[]\OML
+/cmm/m/it/12 dx
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 163--167
+\OT1/cmr/m/n/12 where rel-a-tive to a co-or-di-nate sys-tem
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--167
+
+ []
+
+
+Underfull \hbox (badness 7186) in paragraph at lines 163--167
+\OT1/cmr/m/n/12 Another stan-dard pro-belm has to do
+ []
+
+
+Underfull \hbox (badness 3803) in paragraph at lines 163--167
+\OT1/cmr/m/n/12 Vi-su-al-iz-ing this as cross sec-tional area
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--167
+\OT1/cmr/m/n/12 The in-finites-i-mal weight is equal to
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 167--169
+\OT1/cmr/m/n/12 Another way to think of this is that
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 167--169
+\OT1/cmr/m/n/12 we're di-vid-ing the wa-ter into n pieces,
+ []
+
+
+Underfull \hbox (badness 3895) in paragraph at lines 167--169
+\OT1/cmr/m/n/12 from force into vol-ume into area into
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--169
+
+ []
+
+
+Underfull \hbox (badness 3503) in paragraph at lines 167--169
+\OT1/cmr/m/n/12 When do-ing the in-te-gra-tion, take care
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--169
+
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 167--169
+\OT1/cmr/m/n/12 How much work is req. to pump out
+ []
+
+[11] [12
 
 ] (./notes.aux) ) 
 Here is how much of TeX's memory you used:
@@ -557,7 +704,7 @@ Here is how much of TeX's memory you used:
  5821 multiletter control sequences out of 15000+600000
  11377 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,10n,31p,1090b,183s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,10n,31p,1091b,183s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texliv
@@ -568,11 +715,12 @@ public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c
 :/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/
-2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on notes.pdf (9 pages, 163143 bytes).
+2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texm
+f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on notes.pdf (12 pages, 180381 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
